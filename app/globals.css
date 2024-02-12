@@ -13,8 +13,84 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 1rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  font-size: inherit;
+}
+body,
+.body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+/* TODO: Add want to use Styled-comps, stitches or another js in css */
+
+/* Helpers */
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+button,
 a {
-  color: inherit;
-  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  button:focus-visible {
+    outline: 1.5px dashed #000;
+    outline-offset: 3px;
+  }
 }
