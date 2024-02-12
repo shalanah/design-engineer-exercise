@@ -2,7 +2,7 @@
   padding: 10px 0px;
   overflow: hidden;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 20px;
   box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
     0px 10px 20px -15px rgba(22, 23, 24, 0.2);
 }
@@ -26,8 +26,8 @@
 }
 .SelectItem[data-highlighted] {
   outline: none;
-  background-color: orange;
-  color: yellow;
+  background-color: #f7f7f7;
+  color: #222;
 }
 
 .SelectLabel {

@@ -2,6 +2,11 @@
   --heading-font: "Poppins", sans-serif;
   --body-font: "Roboto", sans-serif;
 }
+button,
+a {
+  all: unset;
+  cursor: pointer;
+}
 *,
 *:after,
 *:before {
@@ -112,11 +117,7 @@ body,
 .align-items-stretch {
   align-items: stretch;
 }
-button,
-a {
-  all: unset;
-  cursor: pointer;
-}
+
 @media (hover: hover) {
   button:focus-visible {
     outline: 1.5px dashed #000;
