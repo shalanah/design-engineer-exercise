@@ -1,4 +1,5 @@
 import React from "react";
+import "./StaffMember.css";
 
 export type StaffMemberProps = {
   team: string;
@@ -15,11 +16,13 @@ export type StaffMemberProps = {
 export type StaffMemberDisplayProps = StaffMemberProps & {
   teamData: any;
   onTeamClick: () => void;
+  itemIndex: number;
 };
 
 export const StaffMember = ({
   onTeamClick,
   teamData,
+  itemIndex,
   team = "Engineering",
   name = "Adnan",
   role = "Software Engineer",
@@ -34,13 +37,16 @@ export const StaffMember = ({
   // use dd/dt html tag
   return (
     <div
+      className="staff-member"
       style={{
+        height: 72,
         border: "1px solid red",
         borderRadius: 20,
         padding: "15px 15px",
         display: "flex",
         gap: 8,
         fontSize: ".8rem",
+        animation: `fadeIn 0.5s ease ${itemIndex * 0.15}s both`,
       }}
     >
       <div

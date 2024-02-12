@@ -93,14 +93,19 @@ export const StaffMembers = () => {
       <section
         className="staff-members-container"
         style={{
-          height: "calc(100vh - 200px)",
+          height: "500px",
           overflowY: "auto",
+          position: "relative",
+          gap: 10,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         {filteredPeople.map((member, i: number) => (
           // might be nice to add id attached to each member - good for animation
           <StaffMember
-            key={i}
+            itemIndex={i}
+            key={`${member.name}-${i}-${selectedTeams.join("-")}`}
             onTeamClick={() => setSelectedTeams([member.team])}
             teamData={teamData}
             {...member}
