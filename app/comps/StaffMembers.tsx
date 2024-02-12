@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import people from "../../team.json";
 import { StaffMember } from "./StaffMember";
 import { Select } from "./Select";
-import { Cross2Icon } from "@radix-ui/react-icons";
+import {
+  Cross2Icon,
+  MagnifyingGlassIcon,
+  ChevronDownIcon,
+} from "@radix-ui/react-icons";
 
 const teams = [...new Set(people.data.map((employee) => employee.team))];
 const colors = [
@@ -37,11 +41,19 @@ const selectItems = [
 
 export const StaffMembers = () => {
   const [selectedTeams, setSelectedTeams] = useState(teams); // maybe someday multiple departments can be selected
+  const [isSearching, setIsSearching] = useState(false); // maybe someday multiple departments can be selected
+  const [search, setSearch] = useState(""); // maybe someday multiple departments can be selected
   const setAllTeamsSelected = () => setSelectedTeams(teams);
   const total = people.data.length;
   const showAllTeams = selectedTeams.length === teams.length;
-  const filteredPeople = people.data.filter((member) =>
-    selectedTeams.includes(member.team)
+  const cleanSearch = search.trim();
+  const useSearch = cleanSearch.length > 0;
+  const filteredPeople = people.data.filter(
+    (member) =>
+      selectedTeams.includes(member.team) &&
+      (!isSearching ||
+        !useSearch ||
+        member.name.toLowerCase().includes(search.toLowerCase()))
   );
   const count = filteredPeople.length;
   return (
@@ -52,18 +64,39 @@ export const StaffMembers = () => {
           fontSize: ".9rem",
           padding: "0px 38px 0px 30px",
           height: 50,
+          borderBottom: "1px solid #efefef",
+          gap: 10,
         }}
       >
+        <button onClick={() => setIsSearching(true)} style={{ lineHeight: 0 }}>
+          <MagnifyingGlassIcon width={20} height={20} />
+        </button>
+        {isSearching && (
+          <label>
+            <input
+              type="search"
+              placeholder="Search"
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </label>
+        )}
         <Select
           onValueChange={(value) => {
             if (value === "all") setAllTeamsSelected();
             else setSelectedTeams([value]);
           }}
           value={showAllTeams ? "all" : selectedTeams[0]}
-          button={<button>Departments </button>}
+          button={
+            <button
+              className="d-flex align-items-center"
+              style={{ gap: 3, marginLeft: 5 }}
+            >
+              Departments <ChevronDownIcon style={{ marginTop: "-2" }} />
+            </button>
+          }
           items={selectItems}
         />
-        <span style={{ marginLeft: 10 }}>
+        <span>
           {showAllTeams ? null : (
             <>
               {selectedTeams.map((item) => (
@@ -100,9 +133,15 @@ export const StaffMembers = () => {
           display: "flex",
           flexDirection: "column",
           scrollMargin: "10px",
+          borderBottom: "1px solid #efefef",
         }}
       >
-        <div style={{ height: 10 }} />
+        <div
+          style={{
+            height: 10,
+            flexShrink: 0,
+          }}
+        />
         {filteredPeople.map((member, i: number) => (
           // might be nice to add id attached to each member - good for animation
           <StaffMember
@@ -113,7 +152,12 @@ export const StaffMembers = () => {
             {...member}
           />
         ))}
-        <div style={{ height: 10 }} />
+        <div
+          style={{
+            height: 10,
+            flexShrink: 0,
+          }}
+        />
         {/* Text if nothing is selected */}
         {/* {selectedTeams.length === 1 ? (
           <button onClick={setAllTeamsSelected}>See all departments</button>
