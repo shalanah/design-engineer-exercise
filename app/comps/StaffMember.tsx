@@ -13,13 +13,13 @@ export type StaffMemberProps = {
 };
 
 export type StaffMemberDisplayProps = StaffMemberProps & {
-  departmentWithColors: any;
-  onDepartmentClick: () => void;
+  teamData: any;
+  onTeamClick: () => void;
 };
 
 export const StaffMember = ({
-  onDepartmentClick,
-  departmentWithColors,
+  onTeamClick,
+  teamData,
   team = "Engineering",
   name = "Adnan",
   role = "Software Engineer",
@@ -30,6 +30,7 @@ export const StaffMember = ({
   country = "",
   city = "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
 }: StaffMemberDisplayProps) => {
+  const teamColor = teamData[team].color;
   // use dd/dt html tag
   return (
     <div
@@ -46,8 +47,9 @@ export const StaffMember = ({
         style={{
           width: 40,
           height: 40,
-          background: "#f7f7f7",
+          // background: "#f7f7f7",
           borderRadius: "50%",
+          background: teamColor,
         }}
       />
       <div className="d-flex justify-content-center flex-column">
@@ -56,14 +58,14 @@ export const StaffMember = ({
       </div>
       <div style={{ margin: "auto 0 auto auto" }}>
         <button
-          onClick={onDepartmentClick}
+          onClick={onTeamClick}
           style={{
             fontSize: ".7rem",
             padding: ".25em 1em",
             borderRadius: "10px",
             display: "flex",
             gap: 8,
-            color: departmentWithColors[team],
+            color: teamColor,
             alignItems: "center",
           }}
         >
@@ -72,7 +74,7 @@ export const StaffMember = ({
             style={{
               width: 8,
               height: 8,
-              background: departmentWithColors[team],
+              background: "currentColor",
               borderRadius: "50%",
             }}
           />
