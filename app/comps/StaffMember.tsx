@@ -40,13 +40,18 @@ export const StaffMember = ({
       className="staff-member"
       style={{
         height: 72,
-        border: "1px solid red",
+        // border: "1px solid #e4e8e9",
+        boxShadow: "0 0 10px rgba(0,0,0,0.15)",
         borderRadius: 20,
+        margin: "0 15px",
         padding: "15px 15px",
         display: "flex",
         gap: 8,
         fontSize: ".8rem",
-        animation: `fadeIn 0.5s ease ${itemIndex * 0.15}s both`,
+        animation:
+          itemIndex < 20
+            ? `fadeIn 0.5s ease ${itemIndex * 0.15}s both`
+            : "fadeIn 0s both",
       }}
     >
       <div

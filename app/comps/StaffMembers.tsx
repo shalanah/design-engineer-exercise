@@ -50,7 +50,7 @@ export const StaffMembers = () => {
         className="d-flex align-items-center"
         style={{
           fontSize: ".9rem",
-          padding: "10px 25px 10px 10px",
+          padding: "0px 38px 0px 30px",
           height: 50,
         }}
       >
@@ -99,8 +99,10 @@ export const StaffMembers = () => {
           gap: 10,
           display: "flex",
           flexDirection: "column",
+          scrollMargin: "10px",
         }}
       >
+        <div style={{ height: 10 }} />
         {filteredPeople.map((member, i: number) => (
           // might be nice to add id attached to each member - good for animation
           <StaffMember
@@ -111,9 +113,11 @@ export const StaffMembers = () => {
             {...member}
           />
         ))}
-        {selectedTeams.length === 1 ? (
+        <div style={{ height: 10 }} />
+        {/* Text if nothing is selected */}
+        {/* {selectedTeams.length === 1 ? (
           <button onClick={setAllTeamsSelected}>See all departments</button>
-        ) : null}
+        ) : null} */}
       </section>
     </div>
   );
