@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Poppins, Roboto } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+const poppins = Poppins({ display: "swap", weight: "700", subsets: ["latin"] });
+const roboto = Roboto({ display: "swap", weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Buffer - Design Engineer Challenge",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
