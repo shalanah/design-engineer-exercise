@@ -10,7 +10,7 @@ Worked on for 2 days as quickly as possible! I'm not sure if I'll have time to c
 
 - Used random emojis to allow for uniform backgrounds and higher-res images than provided
 - Would love to do more interaction between list + map - ran out of time
-- Hope you enjoy. If the code is too messy I'd come back Friday :)
+- Hope you enjoy. If the code is too messy, I'd come back Friday :)
 
 # Getting started
 
