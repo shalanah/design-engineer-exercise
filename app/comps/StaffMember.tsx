@@ -67,7 +67,7 @@ export const StaffMember = ({
         <TeamButton onClick={onTeamClick} color={teamColor} team={team} />
         <div
           className="d-flex align-items-center gap-5"
-          style={{ paddingRight: 10 }}
+          style={{ paddingRight: 10, textAlign: "right" }}
         >
           <span>
             {city}, {getShorthandCountry(country)}

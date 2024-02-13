@@ -194,7 +194,10 @@ export const StaffMembers = () => {
         </div>
         {/* List */}
         <div
-          style={{ width: 400, flex: horizSetUp ? "" : 1 }}
+          style={{
+            width: horizSetUp ? 400 : "100%",
+            flex: horizSetUp ? "" : 1,
+          }}
           className="d-flex flex-column"
         >
           <div
