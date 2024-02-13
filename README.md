@@ -4,7 +4,7 @@
 
 Worked on for 2 days as quickly as possible! I'm not sure if I'll have time to come back to it, but I'm hoping to do a clean up pass by EOD Friday. Feel free to come back to see any changes.
 
-[Site](https://design-engineer-code-assignment.netlify.app/)
+[Deployed Site](https://design-engineer-code-assignment.netlify.app/)
 
 # Getting started
 
