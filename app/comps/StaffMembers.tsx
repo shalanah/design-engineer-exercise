@@ -124,13 +124,13 @@ export const StaffMembers = () => {
           gap: horizSetUp ? "max(3vmin, 15px)" : 5,
           display: "flex",
           flexDirection: horizSetUp ? "row" : "column",
-          height: "100%",
+          height: horizSetUp ? "100%" : "calc(100dvh - 40px)",
         }}
       >
         {/* Map */}
         <div
           style={{
-            flex: 1,
+            flex: horizSetUp ? 1 : 0,
             height: horizSetUp ? "100%" : "auto",
             padding: "0px 15px",
           }}
@@ -140,7 +140,7 @@ export const StaffMembers = () => {
             ref={mapRef}
             style={{
               width: "100%",
-              height: "100%",
+              height: horizSetUp ? "100%" : 210 + 30,
               background:
                 "linear-gradient(45deg, oklch(from rgb(41, 98, 255) 0.95 0.05 h), oklch(from #008db4 0.95 0.05 h))",
               boxShadow: "0 0 50px inset rgb(41, 98, 255, .1)",
@@ -173,7 +173,10 @@ export const StaffMembers = () => {
           </div>
         </div>
         {/* List */}
-        <div style={{ width: 400 }} className="d-flex flex-column">
+        <div
+          style={{ width: 400, flex: horizSetUp ? "" : 1 }}
+          className="d-flex flex-column"
+        >
           <div
             className="d-flex align-items-center"
             style={{
@@ -272,7 +275,7 @@ export const StaffMembers = () => {
             key={textSearch + selectedTeams.join("-")}
             style={{
               overscrollBehavior: "contain",
-              flex: 1,
+              flex: horizSetUp ? 1 : "",
               overflowY: "auto",
               position: "relative",
               gap: 10,
@@ -280,6 +283,7 @@ export const StaffMembers = () => {
               flexDirection: "column",
               scrollMargin: "10px",
               borderBottom: "1px solid #efefef",
+              height: horizSetUp ? "" : "calc(100dvh - 340px)",
             }}
           >
             <div
