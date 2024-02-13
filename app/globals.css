@@ -3,9 +3,13 @@
   --body-font: "Roboto", sans-serif;
 }
 button,
-a {
+a,
+input,
+label {
   all: unset;
   cursor: pointer;
+  font: inherit;
+  box-sizing: border-box;
 }
 *,
 *:after,

@@ -7,19 +7,12 @@ import {
   MagnifyingGlassIcon,
   ChevronDownIcon,
 } from "@radix-ui/react-icons";
+import "./StaffMembers.css";
+import { teamColors as colors } from "../utils/teamColors";
+import { TeamButton } from "./TeamButton";
 
 const teams = [...new Set(people.data.map((employee) => employee.team))];
-const colors = [
-  "#2962FF",
-  "#9500FF",
-  "#e90eff",
-  "#FF0059",
-  "#FF8C00",
-  "#5d9f00",
-  "#00a48b",
-  "#008db4",
-  "#444",
-];
+
 const teamData = Object.fromEntries(
   teams.map((department, i) => [
     department,
@@ -84,15 +77,17 @@ const textSearch = (member: StaffMemberProps, cleanSearch: string) =>
     normalizeString(member[key]).includes(normalizeString(cleanSearch))
   );
 
+// TODO: Deploy
 // TODO: Code clean up
 // TODO: Animation tidy up
-// TODO: Search UI
 // TODO: What's with the weird text select behavior?
 // TODO: Figure out if all the fonts are being pulled in correctly
 export const StaffMembers = () => {
   const [selectedTeams, setSelectedTeams] = useState(teams); // maybe someday multiple departments can be selected
-  const [isSearching, setIsSearching] = useState(false); // maybe someday multiple departments can be selected
-  const [search, setSearch] = useState(""); // maybe someday multiple departments can be selected
+  const [{ search, isSearching }, setSearch] = useState({
+    search: "",
+    isSearching: false,
+  });
   const setAllTeamsSelected = () => setSelectedTeams(teams);
   const total = people.data.length;
   const showAllTeams = selectedTeams.length === teams.length;
@@ -118,20 +113,51 @@ export const StaffMembers = () => {
           height: 50,
           borderBottom: "1px solid #efefef",
           gap: 10,
+          position: "relative",
         }}
       >
-        <button onClick={() => setIsSearching(true)} style={{ lineHeight: 0 }}>
-          <MagnifyingGlassIcon width={20} height={20} />
-        </button>
-        {isSearching && (
-          <label>
-            <input
-              type="search"
-              placeholder="Search"
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </label>
-        )}
+        {/* TODO: Add label text */}
+        <label
+          className="search-icon"
+          htmlFor="search"
+          onClick={() => {
+            setSearch((prev) => {
+              if (prev.isSearching)
+                return {
+                  search: "",
+                  isSearching: false,
+                };
+              else {
+                return {
+                  ...prev,
+                  isSearching: true,
+                };
+              }
+            });
+          }}
+          style={{ lineHeight: 0 }}
+        >
+          {!isSearching ? (
+            <MagnifyingGlassIcon width={20} height={20} />
+          ) : (
+            <Cross2Icon width={20} height={20} />
+          )}
+        </label>
+        <input
+          className={isSearching ? "show" : "hide"}
+          id={"search"}
+          type="search"
+          placeholder="Search"
+          autoComplete="off"
+          onChange={(e) =>
+            setSearch(() => {
+              return {
+                isSearching: true,
+                search: e.target.value,
+              };
+            })
+          }
+        />
         <div
           className="d-flex align-items-center justify-content-center"
           style={{ gap: 5 }}
@@ -156,21 +182,13 @@ export const StaffMembers = () => {
             {showAllTeams ? null : (
               <>
                 {selectedTeams.map((item) => (
-                  <button
-                    onClick={setAllTeamsSelected}
-                    className="d-flex align-items-center"
-                    style={{
-                      gap: ".4em",
-                      fontSize: ".75rem",
-                      padding: ".25em .75em",
-                      border: "1px solid #ccc",
-                      borderRadius: "1em",
-                    }}
+                  <TeamButton
                     key={item}
-                  >
-                    {item}
-                    <Cross2Icon width={10} height={10} />
-                  </button>
+                    onClick={setAllTeamsSelected}
+                    color={teamData[item].color}
+                    team={item}
+                    includeClose
+                  />
                 ))}
               </>
             )}

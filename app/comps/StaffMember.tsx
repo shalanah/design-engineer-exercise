@@ -1,6 +1,7 @@
 import React from "react";
 import "./StaffMember.css";
 import Image from "next/image";
+import { TeamButton } from "./TeamButton";
 
 export type StaffMemberProps = {
   team: string;
@@ -122,27 +123,7 @@ export const StaffMember = ({
         }}
         className="d-flex flex-column"
       >
-        <button
-          onClick={onTeamClick}
-          style={{
-            padding: ".25em 1em",
-            borderRadius: "10px",
-            display: "flex",
-            gap: 8,
-            color: teamColor,
-            alignItems: "center",
-          }}
-        >
-          {team}
-          <div
-            style={{
-              width: 8,
-              height: 8,
-              background: "currentColor",
-              borderRadius: "50%",
-            }}
-          />
-        </button>
+        <TeamButton onClick={onTeamClick} color={teamColor} team={team} />
         <div
           className="d-flex align-items-center"
           style={{ gap: 5, paddingRight: 10 }}
