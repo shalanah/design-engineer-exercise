@@ -1,5 +1,16 @@
 # Design Engineer Async Exercise
 
+## The exercise
+
+Worked on for 2 days as quickly as possible. I'm thinking about working on it more this week just to clean up. So feel free to come back Friday and see if I've made any changes.
+
+[lLve demo](https://design-engineer-code-assignment.netlify.app/)
+
+## Areas I'd Fix
+
+- Code clean up pass (more componentization)
+- First time working with Next.js kinda reminds me of working with Gatsby. I'd try to integrate a better styling system and understand Next.js better as a whole.
+
 ## Getting started
 
 To get started, run the following commands:
@@ -14,26 +25,22 @@ npm run dev
 Hey! 👋 This is the codebase for the design engineer technical exercise. It's a blank NextJS project with a few assets ready to use for the assignment.
 
 <aside>
-⛳ **Objective:** We would like you to implement a new page for the Buffer website highlighting our team, allowing visitors to view information about teammates, filter by department, search, and more.
+⛳ **Objective:** We would like you to implement a new page for the website highlighting our team, allowing visitors to view information about teammates, filter by department, search, and more.
 
 </aside>
 
 ## 🍎 Assignment
 
-You need to create a landing page that would showcase information about the Buffer team in a compelling way, transparent salaries, team structure, and information about people.
+You need to create a landing page that would showcase information about the team in a compelling way, transparent salaries, team structure, and information about people.
 
 - Display the list of teammates with their avatar, name, role, team, location, salary, and other information.
 - When a visitor hovers over the teammate, the element should animate in a delightful way
 - Visitors should be able to search by name and filter by department
 - The page should be responsive and should be optimized for both mobile and desktop
-- The design is up to you, use the design of the existing Buffer site as an inspiration, but do not feel limited by it. We encourage you to be creative while staying true to Buffer’s core values and brand.
+- The design is up to you, use the design of the existing site as an inspiration, but do not feel limited by it. We encourage you to be creative while staying true to the core values and brand.
 - You are welcome to add additional features if you feel they would aid the experience.
 
 ## ⚙️ **Technical requirements**
-
-Below is the zip file with the repository to get you started:
-
-[Design Engineer Exercise.zip](https://prod-files-secure.s3.us-west-2.amazonaws.com/cfbb68ac-9197-4ef2-a8cf-b6b0ff326d1d/c33bb67b-54b0-40aa-bb86-de55c48f8b28/Design_Engineer_Exercise.zip)
 
 - Please use Next.js and TypeScript, as that is our stack. Other than that, you are fully flexible in how you can approach the task
 - Be minimalistic with additional dependencies; you can judge what’s needed and what’s not.
@@ -56,4 +63,4 @@ When assessing the results, these are the main areas we will be looking at. It d
 - The page is complete and works according to requirements. It is stable, and edge cases are handled in a sensible, thought-out manner
 - The code is well-organized, easy to understand, and readable. It follows best practices in the industry. Your work process is visible through the commit history.
 - Web Accessibility and SEO are important for us, as well as handling responsive layout
-- While in reality at Buffer you would work together with a designer, we want to see your approach to design here from scratch. The design you implemented is cohesive and contains delightful and thought-out details.
+- While in reality at you'll would work together with a designer, we want to see your approach to design here from scratch. The design you implemented is cohesive and contains delightful and thought-out details.
