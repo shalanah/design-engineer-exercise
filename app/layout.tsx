@@ -17,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      {/* TODO: Come back to font loading - Not familiar with Next.js font including... Odd, but I'm making sure they load :) */}
+      <body className={roboto.className + poppins.className}>{children}</body>
     </html>
   );
 }

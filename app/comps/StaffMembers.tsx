@@ -81,7 +81,6 @@ const textSearch = (member: StaffMemberProps, cleanSearch: string) =>
 
 // TODO: Code clean up
 // TODO: Animation tidy up
-// TODO: Figure out if all the fonts are being pulled in correctly
 export const StaffMembers = () => {
   const [selectedTeams, setSelectedTeams] = useState(teams); // maybe someday multiple departments can be selected
   const [{ search, isSearching }, setSearch] = useState({
