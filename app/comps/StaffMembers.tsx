@@ -107,19 +107,21 @@ export const StaffMembers = () => {
       : [];
   const [mapRef, { width, height }] = useMeasure();
   const { width: winWidth, height: winHeight } = useWindowSize();
-  const horizSetUp = winWidth > 500;
+  const horizSetUp = winWidth >= 1400;
   return (
     <div
       style={{
         width: "100vw",
         height: "100dvh",
-        padding: "max(18vmin, 15px)",
+        padding: horizSetUp ? "max(16vmin, 15px)" : 20,
         overflow: "hidden",
       }}
     >
       <div
         style={{
-          gap: "max(3vmin, 15px)",
+          maxWidth: horizSetUp ? 1400 : 400,
+          margin: "0 auto",
+          gap: horizSetUp ? "max(3vmin, 15px)" : 5,
           display: "flex",
           flexDirection: horizSetUp ? "row" : "column",
           height: "100%",
@@ -131,7 +133,6 @@ export const StaffMembers = () => {
             flex: 1,
             height: horizSetUp ? "100%" : "auto",
             padding: "0px 15px",
-            marginBottom: 15,
           }}
         >
           <div
@@ -140,7 +141,8 @@ export const StaffMembers = () => {
             style={{
               width: "100%",
               height: "100%",
-              background: "oklch(from rgb(41, 98, 255) 0.95 0.05 h)",
+              background:
+                "linear-gradient(45deg, oklch(from rgb(41, 98, 255) 0.95 0.05 h), oklch(from #008db4 0.95 0.05 h))",
               boxShadow: "0 0 50px inset rgb(41, 98, 255, .1)",
               borderRadius: 20,
               padding: horizSetUp ? "40px" : "15px",
@@ -148,8 +150,8 @@ export const StaffMembers = () => {
           >
             <div>
               <Map
-                width={width - 40}
-                height={height - 40}
+                width={horizSetUp ? width - 40 : width - 30}
+                height={horizSetUp ? height - 40 : 210}
                 people={{
                   type: "FeatureCollection",
                   features: people.data.map((employee) => {
