@@ -10,18 +10,19 @@
       "avatar": "Joel_40.jpg",
       "start_date": "Aug 1, 2010",
       "country": "United States",
-      "city": "Boulder"
+      "city": "Boulder",
+      "emoji": "memo_1"
     },
     {
       "team": "People",
       "name": "Caro",
       "role": "Chief of Staff",
       "location": "Portland, OR, USA",
-      "salary": "$239,442",
       "avatar": "Caro_40.jpg",
       "start_date": "Sep 1, 2012",
       "country": "United States",
-      "city": "Portland"
+      "city": "Portland",
+      "emoji": "memo_2"
     },
     {
       "team": "Product",
@@ -32,7 +33,8 @@
       "avatar": "Maria_40.jpg",
       "start_date": "Oct 31, 2020",
       "country": "United States",
-      "city": "Denver"
+      "city": "Denver",
+      "emoji": "memo_3"
     },
     {
       "team": "Advocacy",
@@ -43,7 +45,8 @@
       "avatar": "Asa_40.jpg",
       "start_date": "Feb 18, 2013",
       "country": "Australia",
-      "city": "Sydney"
+      "city": "Sydney",
+      "emoji": "memo_4"
     },
     {
       "team": "People",
@@ -54,7 +57,8 @@
       "avatar": "Mandy_40.jpg",
       "start_date": "Nov 26, 2018",
       "country": "United States",
-      "city": "Nashville"
+      "city": "Nashville",
+      "emoji": "memo_5"
     },
     {
       "team": "People",
@@ -65,7 +69,8 @@
       "avatar": "Jenna.jpg",
       "start_date": "Nov 30, 2021",
       "country": "United States",
-      "city": "Grand Rapids"
+      "city": "Grand Rapids",
+      "emoji": "memo_6"
     },
     {
       "team": "Finance",
@@ -76,7 +81,8 @@
       "avatar": "Jenny_40.jpg",
       "start_date": "Mar 28, 2016",
       "country": "United States",
-      "city": "Louisville"
+      "city": "Louisville",
+      "emoji": "memo_7"
     },
     {
       "team": "Finance",
@@ -87,7 +93,8 @@
       "avatar": "Kyle_40.jpg",
       "start_date": "Nov 12, 2018",
       "country": "United States",
-      "city": "Jacksonville"
+      "city": "Jacksonville",
+      "emoji": "memo_8"
     },
     {
       "team": "Finance",
@@ -98,7 +105,8 @@
       "avatar": "Nick_40.jpg",
       "start_date": "Apr 19, 2021",
       "country": "Kenya",
-      "city": "Nairobi"
+      "city": "Nairobi",
+      "emoji": "memo_9"
     },
     {
       "team": "Marketing",
@@ -109,7 +117,8 @@
       "avatar": "MikeE_40.jpg",
       "start_date": "Oct 14, 2015",
       "country": "Australia",
-      "city": "Sydney"
+      "city": "Sydney",
+      "emoji": "memo_10"
     },
     {
       "team": "Marketing",
@@ -120,7 +129,8 @@
       "avatar": "Hailley_40.jpg",
       "start_date": "Feb 1, 2016",
       "country": "United States",
-      "city": "Nashville"
+      "city": "Nashville",
+      "emoji": "memo_11"
     },
     {
       "team": "Marketing",
@@ -131,7 +141,8 @@
       "avatar": "Sophie_40.jpg",
       "start_date": "Apr 16, 2020",
       "country": "",
-      "city": ""
+      "city": "",
+      "emoji": "memo_12"
     },
     {
       "team": "Engineering",
@@ -142,7 +153,8 @@
       "avatar": "Placeholder_avatar.jpg",
       "start_date": "Jan 4, 2016",
       "country": "",
-      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)"
+      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
+      "emoji": "memo_13"
     },
     {
       "team": "Engineering",
@@ -153,7 +165,8 @@
       "avatar": "Andy_40.jpg",
       "start_date": "Jun 1, 2012",
       "country": "United States",
-      "city": "San Francisco"
+      "city": "San Francisco",
+      "emoji": "memo_14"
     },
     {
       "team": "Engineering",
@@ -164,7 +177,8 @@
       "avatar": "Boris_40.jpg",
       "start_date": "Nov 9, 2015",
       "country": "France",
-      "city": "Montpellier"
+      "city": "Montpellier",
+      "emoji": "memo_15"
     },
     {
       "team": "Engineering",
@@ -175,7 +189,8 @@
       "avatar": "Eric_40.jpg",
       "start_date": "Jan 6, 2015",
       "country": "Taiwan",
-      "city": "Taipei"
+      "city": "Taipei",
+      "emoji": "memo_16"
     },
     {
       "team": "Engineering",
@@ -186,7 +201,8 @@
       "avatar": "Hamish_40.jpg",
       "start_date": "Apr 25, 2016",
       "country": "Canada",
-      "city": "Vancouver"
+      "city": "Vancouver",
+      "emoji": "memo_17"
     },
     {
       "team": "Engineering",
@@ -197,7 +213,8 @@
       "avatar": "Joe_40.jpg",
       "start_date": "Jul 18, 2016",
       "country": "United Kingdom",
-      "city": "Brighton"
+      "city": "Brighton",
+      "emoji": "memo_18"
     },
     {
       "team": "Engineering",
@@ -208,7 +225,8 @@
       "avatar": "Jose_40.jpg",
       "start_date": "Dec 1, 2014",
       "country": "Spain",
-      "city": "Madrid"
+      "city": "Madrid",
+      "emoji": "memo_19"
     },
     {
       "team": "Engineering",
@@ -219,7 +237,8 @@
       "avatar": "MikeS_40.jpg",
       "start_date": "Jul 14, 2014",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_20"
     },
     {
       "team": "Engineering",
@@ -230,7 +249,8 @@
       "avatar": "Phil_40.jpg",
       "start_date": "Feb 9, 2015",
       "country": "France",
-      "city": "Montpellier"
+      "city": "Montpellier",
+      "emoji": "memo_21"
     },
     {
       "team": "Engineering",
@@ -241,7 +261,8 @@
       "avatar": "Steven_40.jpg",
       "start_date": "Feb 3, 2014",
       "country": "Taiwan",
-      "city": "Taipei"
+      "city": "Taipei",
+      "emoji": "memo_22"
     },
     {
       "team": "Engineering",
@@ -252,7 +273,8 @@
       "avatar": "Eduardo_40.jpg",
       "start_date": "Aug 1, 2018",
       "country": "Spain",
-      "city": "Alicante"
+      "city": "Alicante",
+      "emoji": "memo_23"
     },
     {
       "team": "Engineering",
@@ -263,7 +285,8 @@
       "avatar": "Maya_40.jpg",
       "start_date": "Jul 25, 2018",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_24"
     },
     {
       "team": "Engineering",
@@ -274,7 +297,8 @@
       "avatar": "Placeholder_avatar.jpg",
       "start_date": "Oct 29, 2018",
       "country": "",
-      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)"
+      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
+      "emoji": "memo_25"
     },
     {
       "team": "Engineering",
@@ -285,7 +309,8 @@
       "avatar": "Dinos_40.jpg",
       "start_date": "Jun 5, 2019",
       "country": "Netherlands",
-      "city": "Gorredijk"
+      "city": "Gorredijk",
+      "emoji": "memo_26"
     },
     {
       "team": "Engineering",
@@ -296,7 +321,8 @@
       "avatar": "Dianne_40.jpg",
       "start_date": "May 30, 2019",
       "country": "Switzerland",
-      "city": "Zürich"
+      "city": "Zürich",
+      "emoji": "memo_27"
     },
     {
       "team": "Engineering",
@@ -307,7 +333,8 @@
       "avatar": "Dace_40.jpg",
       "start_date": "Jul 1, 2019",
       "country": "United States",
-      "city": "New York"
+      "city": "New York",
+      "emoji": "memo_28"
     },
     {
       "team": "Engineering",
@@ -318,7 +345,8 @@
       "avatar": "Mick_40.jpg",
       "start_date": "Jan 21, 2016",
       "country": "Ireland",
-      "city": "Wexford"
+      "city": "Wexford",
+      "emoji": "memo_29"
     },
     {
       "team": "Engineering",
@@ -329,7 +357,8 @@
       "avatar": "Carlos.jpg",
       "start_date": "May 10, 2021",
       "country": "Spain",
-      "city": "Madrid"
+      "city": "Madrid",
+      "emoji": "memo_30"
     },
     {
       "team": "Engineering",
@@ -340,7 +369,8 @@
       "avatar": "Placeholder_avatar.jpg",
       "start_date": "Jun 1, 2021",
       "country": "",
-      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)"
+      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
+      "emoji": "memo_31"
     },
     {
       "team": "Engineering",
@@ -351,7 +381,8 @@
       "avatar": "Arek_40.jpg",
       "start_date": "Jun 7, 2021",
       "country": "Poland",
-      "city": "Warsaw"
+      "city": "Warsaw",
+      "emoji": "memo_32"
     },
     {
       "team": "Engineering",
@@ -362,7 +393,8 @@
       "avatar": "MW_40.jpg",
       "start_date": "Jun 14, 2021",
       "country": "South Africa",
-      "city": "Cape Town"
+      "city": "Cape Town",
+      "emoji": "memo_33"
     },
     {
       "team": "Engineering",
@@ -373,7 +405,8 @@
       "avatar": "Daisy_40.jpg",
       "start_date": "Aug 2, 2021",
       "country": "Australia",
-      "city": "Sydney"
+      "city": "Sydney",
+      "emoji": "memo_34"
     },
     {
       "team": "Product",
@@ -384,7 +417,8 @@
       "avatar": "Diego_40.jpg",
       "start_date": "Apr 1, 2019",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_35"
     },
     {
       "team": "Product",
@@ -395,7 +429,8 @@
       "avatar": "Amanda_40.jpg",
       "start_date": "Feb 17, 2020",
       "country": "Netherlands",
-      "city": "Amsterdam"
+      "city": "Amsterdam",
+      "emoji": "memo_1"
     },
     {
       "team": "Design",
@@ -406,7 +441,8 @@
       "avatar": "Sofia_40.jpg",
       "start_date": "Jul 5, 2021",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_2"
     },
     {
       "team": "Design",
@@ -417,7 +453,8 @@
       "avatar": "Ismail_40.jpg",
       "start_date": "Sep 13, 2021",
       "country": "Morocco",
-      "city": "Casablanca"
+      "city": "Casablanca",
+      "emoji": "memo_3"
     },
     {
       "team": "Data",
@@ -428,7 +465,8 @@
       "avatar": "Julian_40.jpg",
       "start_date": "Mar 16, 2015",
       "country": "United States",
-      "city": "Louisville"
+      "city": "Louisville",
+      "emoji": "memo_4"
     },
     {
       "team": "Advocacy",
@@ -439,7 +477,8 @@
       "avatar": "Adam_40.jpg",
       "start_date": "Nov 18, 2013",
       "country": "United States",
-      "city": "Wesley Chapel"
+      "city": "Wesley Chapel",
+      "emoji": "memo_5"
     },
     {
       "team": "Advocacy",
@@ -450,7 +489,8 @@
       "avatar": "DanielS_40.jpg",
       "start_date": "Apr 25, 2016",
       "country": "United States",
-      "city": "Bonners Ferry"
+      "city": "Bonners Ferry",
+      "emoji": "memo_6"
     },
     {
       "team": "Advocacy",
@@ -461,7 +501,8 @@
       "avatar": "Danny_40.jpg",
       "start_date": "May 5, 2015",
       "country": "United Kingdom",
-      "city": "Manchester"
+      "city": "Manchester",
+      "emoji": "memo_7"
     },
     {
       "team": "Advocacy",
@@ -472,7 +513,8 @@
       "avatar": "Darcy_40.jpg",
       "start_date": "Nov 16, 2015",
       "country": "United States",
-      "city": "Denver"
+      "city": "Denver",
+      "emoji": "memo_8"
     },
     {
       "team": "Advocacy",
@@ -483,7 +525,8 @@
       "avatar": "Dave_40.jpg",
       "start_date": "Mar 7, 2014",
       "country": "United Kingdom",
-      "city": "London"
+      "city": "London",
+      "emoji": "memo_9"
     },
     {
       "team": "Advocacy",
@@ -494,7 +537,8 @@
       "avatar": "Hannah_40.jpg",
       "start_date": "Jan 4, 2016",
       "country": "United Kingdom",
-      "city": "Brighton"
+      "city": "Brighton",
+      "emoji": "memo_10"
     },
     {
       "team": "Advocacy",
@@ -505,7 +549,8 @@
       "avatar": "Jess_40.jpg",
       "start_date": "Dec 8, 2016",
       "country": "United States",
-      "city": "Kalispell"
+      "city": "Kalispell",
+      "emoji": "memo_11"
     },
     {
       "team": "Advocacy",
@@ -516,7 +561,8 @@
       "avatar": "Julia_40.jpg",
       "start_date": "Mar 28, 2016",
       "country": "United States",
-      "city": "Los Angeles"
+      "city": "Los Angeles",
+      "emoji": "memo_12"
     },
     {
       "team": "Advocacy",
@@ -527,7 +573,8 @@
       "avatar": "Juliet_40.jpg",
       "start_date": "Nov 9, 2015",
       "country": "United Kingdom",
-      "city": "London"
+      "city": "London",
+      "emoji": "memo_13"
     },
     {
       "team": "Advocacy",
@@ -538,7 +585,8 @@
       "avatar": "Karinna_40.jpg",
       "start_date": "Mar 14, 2016",
       "country": "United States",
-      "city": "Tustin"
+      "city": "Tustin",
+      "emoji": "memo_14"
     },
     {
       "team": "Advocacy",
@@ -549,7 +597,8 @@
       "avatar": "Kelly_40.jpg",
       "start_date": "Aug 17, 2015",
       "country": "United States",
-      "city": "Philadelphia"
+      "city": "Philadelphia",
+      "emoji": "memo_15"
     },
     {
       "team": "Advocacy",
@@ -560,7 +609,8 @@
       "avatar": "Nate_40.jpg",
       "start_date": "Jan 22, 2018",
       "country": "United States",
-      "city": "Portland"
+      "city": "Portland",
+      "emoji": "memo_16"
     },
     {
       "team": "Advocacy",
@@ -571,7 +621,8 @@
       "avatar": "Octa_40.jpg",
       "start_date": "Apr 28, 2014",
       "country": "",
-      "city": ""
+      "city": "",
+      "emoji": "memo_17"
     },
     {
       "team": "Advocacy",
@@ -582,7 +633,8 @@
       "avatar": "Ross_40.jpg",
       "start_date": "Aug 31, 2015",
       "country": "United States",
-      "city": "Louisville"
+      "city": "Louisville",
+      "emoji": "memo_18"
     },
     {
       "team": "Advocacy",
@@ -593,7 +645,8 @@
       "avatar": "Essence_40.jpg",
       "start_date": "Sep 4, 2018",
       "country": "United States",
-      "city": "Chicago"
+      "city": "Chicago",
+      "emoji": "memo_19"
     },
     {
       "team": "Advocacy",
@@ -604,7 +657,8 @@
       "avatar": "Mel_40.jpg",
       "start_date": "Jul 1, 2019",
       "country": "Brunei",
-      "city": "Bandar Seri Begawan"
+      "city": "Bandar Seri Begawan",
+      "emoji": "memo_20"
     },
     {
       "team": "Advocacy",
@@ -615,7 +669,8 @@
       "avatar": "Placeholder_avatar.jpg",
       "start_date": "Feb 10, 2021",
       "country": "",
-      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)"
+      "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
+      "emoji": "memo_21"
     },
     {
       "team": "Advocacy",
@@ -626,7 +681,8 @@
       "avatar": "Lexi_40.jpg",
       "start_date": "Sep 20, 2021",
       "country": "United States",
-      "city": "Brooklyn"
+      "city": "Brooklyn",
+      "emoji": "memo_22"
     },
     {
       "team": "Advocacy",
@@ -637,7 +693,8 @@
       "avatar": "Ben_40.jpg",
       "start_date": "Dec 13, 2021",
       "country": "Thailand",
-      "city": "Nakhon Ratchasima"
+      "city": "Nakhon Ratchasima",
+      "emoji": "memo_23"
     },
     {
       "team": "Marketing",
@@ -648,7 +705,8 @@
       "avatar": "Simon_40.jpg",
       "start_date": "Jan 10, 2022",
       "country": "Canada",
-      "city": "Ottawa"
+      "city": "Ottawa",
+      "emoji": "memo_24"
     },
     {
       "team": "Marketing",
@@ -659,7 +717,8 @@
       "avatar": "Tami_40.png",
       "start_date": "Feb 23, 2022",
       "country": "Nigeria",
-      "city": "Lagos"
+      "city": "Lagos",
+      "emoji": "memo_25"
     },
     {
       "team": "Design",
@@ -670,7 +729,8 @@
       "avatar": "Martin_40.jpg",
       "start_date": "Mar 21, 2022",
       "country": "United States",
-      "city": "Berkeley"
+      "city": "Berkeley",
+      "emoji": "memo_26"
     },
     {
       "team": "Marketing",
@@ -681,7 +741,8 @@
       "avatar": "Mitra_40.png",
       "start_date": "Apr 11, 2022",
       "country": "United States",
-      "city": "New Braunfels"
+      "city": "New Braunfels",
+      "emoji": "memo_27"
     },
     {
       "team": "Engineering",
@@ -692,7 +753,8 @@
       "avatar": "Abeeb_40.jpg",
       "start_date": "Apr 25, 2022",
       "country": "Nigeria",
-      "city": "Lagos"
+      "city": "Lagos",
+      "emoji": "memo_28"
     },
     {
       "team": "Engineering",
@@ -703,7 +765,8 @@
       "avatar": "Jacob_40.jpg",
       "start_date": "Jun 27, 2022",
       "country": "United States",
-      "city": "Nashville"
+      "city": "Nashville",
+      "emoji": "memo_29"
     },
     {
       "team": "Engineering",
@@ -714,7 +777,8 @@
       "avatar": "Esther_40.jpg",
       "start_date": "Nov 14, 2022",
       "country": "Spain",
-      "city": "Madrid"
+      "city": "Madrid",
+      "emoji": "memo_30"
     },
     {
       "team": "Design",
@@ -725,7 +789,8 @@
       "avatar": "DanielP_40.jpg",
       "start_date": "Jan 23, 2023",
       "country": "Malta",
-      "city": "Valletta"
+      "city": "Valletta",
+      "emoji": "memo_31"
     },
     {
       "team": "Product",
@@ -736,7 +801,8 @@
       "avatar": "Nathan_40.jpg",
       "start_date": "Apr 28, 2023",
       "country": "United States",
-      "city": "Lehi"
+      "city": "Lehi",
+      "emoji": "memo_32"
     },
     {
       "team": "Product",
@@ -747,7 +813,8 @@
       "avatar": "Brandon_40.jpg",
       "start_date": "May 9, 2023",
       "country": "United States",
-      "city": "Lunenburg"
+      "city": "Lunenburg",
+      "emoji": "memo_33"
     },
     {
       "team": "Design",
@@ -758,7 +825,8 @@
       "avatar": "Kate_40.jpg",
       "start_date": "Jun 6, 2023",
       "country": "Canada",
-      "city": "Victoria"
+      "city": "Victoria",
+      "emoji": "memo_34"
     },
     {
       "team": "Engineering",
@@ -769,7 +837,8 @@
       "avatar": "Raf_40.jpg",
       "start_date": "Jun 13, 2023",
       "country": "Poland",
-      "city": "Poznań"
+      "city": "Poznań",
+      "emoji": "memo_35"
     },
     {
       "team": "Engineering",
@@ -780,7 +849,8 @@
       "avatar": "Kateryna_40.jpg",
       "start_date": "Jul 19, 2023",
       "country": "Estonia",
-      "city": "Tallinn"
+      "city": "Tallinn",
+      "emoji": "memo_1"
     },
     {
       "team": "Marketing",
@@ -791,7 +861,8 @@
       "avatar": "Kirsti_40.jpg",
       "start_date": "Aug 15, 2023",
       "country": "South Africa",
-      "city": "Cape Town"
+      "city": "Cape Town",
+      "emoji": "memo_2"
     },
     {
       "team": "Design",
@@ -802,7 +873,8 @@
       "avatar": "Alicja_40.jpg",
       "start_date": "Nov 28, 2023",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_3"
     },
     {
       "team": "Engineering",
@@ -813,7 +885,8 @@
       "avatar": "MartinGM_40.jpg",
       "start_date": "Dec 12, 2023",
       "country": "Spain",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "emoji": "memo_4"
     },
     {
       "team": "Engineering",
@@ -824,7 +897,8 @@
       "avatar": "Frantz_40.jpg",
       "start_date": "Dec 13, 2023",
       "country": "Nigeria",
-      "city": "Lagos"
+      "city": "Lagos",
+      "emoji": "memo_5"
     }
   ]
 }

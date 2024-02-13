@@ -1,6 +1,6 @@
 "use client";
 
-import { StaffMembers } from "./base/StaffMembers";
+import { StaffMembers } from "./comps/StaffMembers";
 
 export default function Home() {
   return (
