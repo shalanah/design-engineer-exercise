@@ -26,8 +26,6 @@ export type StaffMemberProps = {
   name: string;
   role: string;
   location: string;
-  salary: string;
-  avatar: string;
   start_date: string;
   country: string;
   city: string;
