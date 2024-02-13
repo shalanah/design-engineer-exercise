@@ -8,12 +8,14 @@ export type StaffMemberDisplayProps = StaffMemberProps & {
   teamData: any;
   onTeamClick: () => void;
   itemIndex: number;
+  noAnimation?: boolean;
 };
 
 export const StaffMember = ({
   onTeamClick,
   teamData,
   itemIndex,
+  noAnimation = false,
   team = "Engineering",
   name = "Adnan",
   emoji = "memo_1",
@@ -33,10 +35,9 @@ export const StaffMember = ({
       style={{
         // @ts-ignore
         "--outline": teamColor,
-        animation:
-          itemIndex < 20
-            ? `fadeIn 0.5s ease ${itemIndex * 0.15}s both`
-            : "fadeIn 0s both",
+        animation: !noAnimation
+          ? `fadeIn 0.5s ease ${Math.min(itemIndex, 20) * 0.15}s both` // TODO: make a min func
+          : "fadeIn 0s both",
       }}
     >
       <div className="photo-container">

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import people from "../../team.json";
 import { StaffMember } from "./StaffMember";
 import { Select } from "./Select";
@@ -79,10 +79,8 @@ const textSearch = (member: StaffMemberProps, cleanSearch: string) =>
     normalizeString(member[key]).includes(normalizeString(cleanSearch))
   );
 
-// TODO: Deploy
 // TODO: Code clean up
 // TODO: Animation tidy up
-// TODO: What's with the weird text select behavior?
 // TODO: Figure out if all the fonts are being pulled in correctly
 export const StaffMembers = () => {
   const [selectedTeams, setSelectedTeams] = useState(teams); // maybe someday multiple departments can be selected
@@ -106,8 +104,40 @@ export const StaffMembers = () => {
       ? people.data.filter((member) => textSearch(member, cleanSearch))
       : [];
   const [mapRef, { width, height }] = useMeasure();
-  const { width: winWidth, height: winHeight } = useWindowSize();
-  const horizSetUp = winWidth >= 1400;
+  // const { width: winWidth, height: winHeight } = useWindowSize();
+
+  const [windowSize, setWindowSize] = useState<{
+    width: number;
+    height: number;
+  }>({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+
+  const horizSetUp = windowSize.width >= 1400;
+
+  if (windowSize.width === 0) return null; // let's not render anything if we don't have a window size yet
   return (
     <div
       style={{
@@ -159,7 +189,7 @@ export const StaffMembers = () => {
                       type: "Feature",
                       properties: {
                         fill: teamData[employee.team].color,
-                        active: false,
+                        active: filteredPeople.includes(employee),
                       },
                       geometry: {
                         type: "Point",
@@ -272,7 +302,7 @@ export const StaffMembers = () => {
           </div>
           <section
             className="staff-members-container"
-            key={textSearch + selectedTeams.join("-")}
+            key={selectedTeams.join("-")}
             style={{
               overscrollBehavior: "contain",
               flex: horizSetUp ? 1 : "",
@@ -295,6 +325,7 @@ export const StaffMembers = () => {
             {filteredPeople.map((member, i: number) => (
               // might be nice to add id attached to each member - good for animation
               <StaffMember
+                noAnimation={isSearching}
                 itemIndex={i}
                 key={`${member.name}-${i}-${selectedTeams.join("-")}`}
                 onTeamClick={() => setSelectedTeams([member.team])}

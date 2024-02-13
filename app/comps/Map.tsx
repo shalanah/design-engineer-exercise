@@ -24,7 +24,7 @@ export const Map = ({ width, height, people }: MapProps) => {
           key={shape.id}
           // @ts-ignore
           d={geoPathGenerator(shape)}
-          style={{ color: "#ffffff" }}
+          style={{ color: "#fff" }}
           fill="currentColor"
           stroke="currentColor"
           strokeWidth={1}
@@ -36,26 +36,21 @@ export const Map = ({ width, height, people }: MapProps) => {
   const allMarkers = people.features.map((feat, i) => {
     // @ts-ignore
     const [x, y] = projection(feat.geometry.coordinates);
+    // TODO: swap out the pin design add scale animation
+    // TODO: add even more active hover state
     return (
-      <circle
-        key={i}
-        cx={x}
-        cy={y}
-        r={2}
-        fill="none"
-        stroke={feat.properties?.active ? feat.properties?.fill : "#777"}
-        // stroke={"#888"}
-        strokeOpacity={0.5}
-      />
+      <g transform={`translate(${x - 2} ${y - 2})`} key={i}>
+        <circle
+          r={5}
+          fill={feat.properties?.active ? feat.properties?.fill : "transparent"}
+          style={{ transition: ".2s" }}
+        />
+      </g>
     );
   });
 
   return (
-    <svg
-      width={width}
-      height={height}
-      // style={{ outline: "1px solid red" }}
-    >
+    <svg width={width} height={height}>
       {allSvgPaths}
       {allMarkers}
     </svg>

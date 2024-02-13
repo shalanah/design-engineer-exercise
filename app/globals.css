@@ -156,3 +156,8 @@ body,
 .gap-15 {
   gap: 15px;
 }
+
+/* For centering svg transforms */
+svg * {
+  transform-box: fill-box;
+}
