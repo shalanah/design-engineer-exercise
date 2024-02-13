@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import people from "../../team.json";
 import { StaffMember } from "./StaffMember";
 import { Select } from "./Select";
@@ -11,6 +11,7 @@ import "./StaffMembers.css";
 import { teamColors as colors, StaffMemberProps } from "../utils/team";
 import { TeamButton } from "./TeamButton";
 import { Map } from "./Map";
+import { useMeasure, useWindowSize } from "react-use";
 
 const teams = [...new Set(people.data.map((employee) => employee.team))];
 
@@ -104,224 +105,251 @@ export const StaffMembers = () => {
     count === 0
       ? people.data.filter((member) => textSearch(member, cleanSearch))
       : [];
+  const [mapRef, { width, height }] = useMeasure();
+  const { width: winWidth, height: winHeight } = useWindowSize();
+  const horizSetUp = winWidth > 500;
   return (
-    <div>
-      <div style={{ margin: "30px auto", maxWidth: 500 }}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100dvh",
+        padding: "max(18vmin, 15px)",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          gap: "max(3vmin, 15px)",
+          display: "flex",
+          flexDirection: horizSetUp ? "row" : "column",
+          height: "100%",
+        }}
+      >
+        {/* Map */}
         <div
           style={{
-            width: "100%",
+            flex: 1,
+            height: horizSetUp ? "100%" : "auto",
             padding: "0px 15px",
             marginBottom: 15,
           }}
         >
           <div
+            // @ts-ignore
+            ref={mapRef}
             style={{
               width: "100%",
-              boxShadow: "0 0 10px rgba(0, 0, 0, 0.15)",
-              background: "#fff",
+              height: "100%",
+              background: "oklch(from rgb(41, 98, 255) 0.95 0.05 h)",
+              boxShadow: "0 0 50px inset rgb(41, 98, 255, .1)",
               borderRadius: 20,
-              padding: "20px 20px",
+              padding: horizSetUp ? "40px" : "15px",
             }}
           >
-            <Map
-              width={420}
-              height={250}
-              people={{
-                type: "FeatureCollection",
-                features: people.data.map((employee) => {
-                  return {
-                    type: "Feature",
-                    properties: {
-                      fill: teamData[employee.team].color,
-                      active: false,
-                    },
-                    geometry: {
-                      type: "Point",
-                      coordinates: [employee.coord.lng, employee.coord.lat],
-                    },
-                  };
-                }),
-              }}
-            />
-          </div>
-        </div>
-        <div
-          className="d-flex align-items-center"
-          style={{
-            fontSize: ".9rem",
-            padding: "0px 38px 0px 30px",
-            height: 50,
-            borderBottom: "1px solid #efefef",
-            gap: 10,
-            position: "relative",
-          }}
-        >
-          {/* TODO: Add label text */}
-          <label
-            className="search-icon"
-            htmlFor="search"
-            onClick={() => {
-              setSearch((prev) => {
-                if (prev.isSearching)
-                  return {
-                    search: "",
-                    isSearching: false,
-                  };
-                else {
-                  return {
-                    ...prev,
-                    isSearching: true,
-                  };
-                }
-              });
-            }}
-            style={{ lineHeight: 0 }}
-          >
-            {!isSearching ? (
-              <MagnifyingGlassIcon width={20} height={20} />
-            ) : (
-              <Cross2Icon width={20} height={20} />
-            )}
-          </label>
-          <input
-            className={isSearching ? "show" : "hide"}
-            id={"search"}
-            type="search"
-            placeholder="Search"
-            autoComplete="off"
-            onChange={(e) =>
-              setSearch(() => {
-                return {
-                  isSearching: true,
-                  search: e.target.value,
-                };
-              })
-            }
-          />
-          <div
-            className="d-flex align-items-center justify-content-center"
-            style={{ gap: 5 }}
-          >
-            <Select
-              onValueChange={(value) => {
-                if (value === "all") setAllTeamsSelected();
-                else setSelectedTeams([value]);
-              }}
-              value={showAllTeams ? "all" : selectedTeams[0]}
-              button={
-                <button
-                  className="d-flex align-items-center teams-button"
-                  style={{ gap: 3, fontSize: "0.75rem" }}
-                >
-                  Teams <ChevronDownIcon style={{ marginTop: "-2" }} />
-                </button>
-              }
-              items={selectItems}
-            />
-            <span>
-              {showAllTeams ? null : (
-                <>
-                  {selectedTeams.map((item) => (
-                    <TeamButton
-                      key={item}
-                      onClick={setAllTeamsSelected}
-                      color={teamData[item].color}
-                      team={item}
-                      includeClose
-                    />
-                  ))}
-                </>
-              )}
-            </span>
-          </div>
-          <span style={{ margin: "auto 0 auto auto", fontSize: ".75rem" }}>
-            {count} of {total}
-          </span>
-        </div>
-        <section
-          className="staff-members-container"
-          key={textSearch + selectedTeams.join("-")}
-          style={{
-            overscrollBehavior: "contain",
-            height: "500px",
-            overflowY: "auto",
-            position: "relative",
-            gap: 10,
-            display: "flex",
-            flexDirection: "column",
-            scrollMargin: "10px",
-            borderBottom: "1px solid #efefef",
-          }}
-        >
-          <div
-            style={{
-              height: 10,
-              flexShrink: 0,
-            }}
-          />
-          {filteredPeople.map((member, i: number) => (
-            // might be nice to add id attached to each member - good for animation
-            <StaffMember
-              itemIndex={i}
-              key={`${member.name}-${i}-${selectedTeams.join("-")}`}
-              onTeamClick={() => setSelectedTeams([member.team])}
-              teamData={teamData}
-              {...member}
-            />
-          ))}
-          <div
-            className="d-flex justify-content-between align-items-center"
-            key={`${selectedTeams.join("-")}-${count}-${total}`}
-            style={{
-              margin: "10px 40px",
-              fontSize: ".75rem",
-              animation: `fadeIn .5s ${count * 0.15}s both`,
-            }}
-          >
-            {filteredPeople.length === 0 ? (
-              <div>
-                No matches for &quot;{cleanSearch}&quot;
-                {outsideSearch.length > 0 && selectedTeams.length !== 0
-                  ? ` within ${selectedTeams.join(", ")}`
-                  : ""}
-              </div>
-            ) : (
-              <div />
-            )}
             <div>
-              {count} of {total}
+              <Map
+                width={width - 40}
+                height={height - 40}
+                people={{
+                  type: "FeatureCollection",
+                  features: people.data.map((employee) => {
+                    return {
+                      type: "Feature",
+                      properties: {
+                        fill: teamData[employee.team].color,
+                        active: false,
+                      },
+                      geometry: {
+                        type: "Point",
+                        coordinates: [employee.coord.lng, employee.coord.lat],
+                      },
+                    };
+                  }),
+                }}
+              />
             </div>
           </div>
-          {outsideSearch.length > 0 && (
-            <>
-              <div
-                style={{
-                  padding: "20px 40px",
-                  fontSize: ".75rem",
-                  borderTop: "1px dotted #ccc",
-                }}
-              >
-                Other results for &quot;{cleanSearch}&quot;
-              </div>
-              {outsideSearch.map((member, i: number) => (
-                // might be nice to add id attached to each member - good for animation
-                <StaffMember
-                  itemIndex={i}
-                  key={`${member.name}-${i}-${selectedTeams.join("-")}`}
-                  onTeamClick={() => setSelectedTeams([member.team])}
-                  teamData={teamData}
-                  {...member}
-                />
-              ))}
-            </>
-          )}
+        </div>
+        {/* List */}
+        <div style={{ width: 400 }} className="d-flex flex-column">
           <div
+            className="d-flex align-items-center"
             style={{
-              height: 0,
-              flexShrink: 0,
+              fontSize: ".9rem",
+              padding: "0px 38px 0px 30px",
+              height: 50,
+              borderBottom: "1px solid #efefef",
+              gap: 10,
+              position: "relative",
             }}
-          />
-        </section>
+          >
+            {/* TODO: Add label text */}
+            <label
+              className="search-icon"
+              htmlFor="search"
+              onClick={() => {
+                setSearch((prev) => {
+                  if (prev.isSearching)
+                    return {
+                      search: "",
+                      isSearching: false,
+                    };
+                  else {
+                    return {
+                      ...prev,
+                      isSearching: true,
+                    };
+                  }
+                });
+              }}
+              style={{ lineHeight: 0 }}
+            >
+              {!isSearching ? (
+                <MagnifyingGlassIcon width={20} height={20} />
+              ) : (
+                <Cross2Icon width={20} height={20} />
+              )}
+            </label>
+            <input
+              className={isSearching ? "show" : "hide"}
+              id={"search"}
+              type="search"
+              placeholder="Search"
+              autoComplete="off"
+              onChange={(e) =>
+                setSearch(() => {
+                  return {
+                    isSearching: true,
+                    search: e.target.value,
+                  };
+                })
+              }
+            />
+            <div
+              className="d-flex align-items-center justify-content-center"
+              style={{ gap: 5 }}
+            >
+              <Select
+                onValueChange={(value) => {
+                  if (value === "all") setAllTeamsSelected();
+                  else setSelectedTeams([value]);
+                }}
+                value={showAllTeams ? "all" : selectedTeams[0]}
+                button={
+                  <button
+                    className="d-flex align-items-center teams-button"
+                    style={{ gap: 3, fontSize: "0.75rem" }}
+                  >
+                    Teams <ChevronDownIcon style={{ marginTop: "-2" }} />
+                  </button>
+                }
+                items={selectItems}
+              />
+              <span>
+                {showAllTeams ? null : (
+                  <>
+                    {selectedTeams.map((item) => (
+                      <TeamButton
+                        key={item}
+                        onClick={setAllTeamsSelected}
+                        color={teamData[item].color}
+                        team={item}
+                        includeClose
+                      />
+                    ))}
+                  </>
+                )}
+              </span>
+            </div>
+            <span style={{ margin: "auto 0 auto auto", fontSize: ".75rem" }}>
+              {count} of {total}
+            </span>
+          </div>
+          <section
+            className="staff-members-container"
+            key={textSearch + selectedTeams.join("-")}
+            style={{
+              overscrollBehavior: "contain",
+              flex: 1,
+              overflowY: "auto",
+              position: "relative",
+              gap: 10,
+              display: "flex",
+              flexDirection: "column",
+              scrollMargin: "10px",
+              borderBottom: "1px solid #efefef",
+            }}
+          >
+            <div
+              style={{
+                height: 10,
+                flexShrink: 0,
+              }}
+            />
+            {filteredPeople.map((member, i: number) => (
+              // might be nice to add id attached to each member - good for animation
+              <StaffMember
+                itemIndex={i}
+                key={`${member.name}-${i}-${selectedTeams.join("-")}`}
+                onTeamClick={() => setSelectedTeams([member.team])}
+                teamData={teamData}
+                {...member}
+              />
+            ))}
+            <div
+              className="d-flex justify-content-between align-items-center"
+              key={`${selectedTeams.join("-")}-${count}-${total}`}
+              style={{
+                margin: "10px 40px",
+                fontSize: ".75rem",
+                animation: `fadeIn .5s ${count * 0.15}s both`,
+              }}
+            >
+              {filteredPeople.length === 0 ? (
+                <div>
+                  No matches for &quot;{cleanSearch}&quot;
+                  {outsideSearch.length > 0 && selectedTeams.length !== 0
+                    ? ` within ${selectedTeams.join(", ")}`
+                    : ""}
+                </div>
+              ) : (
+                <div />
+              )}
+              <div>
+                {count} of {total}
+              </div>
+            </div>
+            {outsideSearch.length > 0 && (
+              <>
+                <div
+                  style={{
+                    padding: "20px 40px",
+                    fontSize: ".75rem",
+                    borderTop: "1px dotted #ccc",
+                  }}
+                >
+                  Other results for &quot;{cleanSearch}&quot;
+                </div>
+                {outsideSearch.map((member, i: number) => (
+                  // might be nice to add id attached to each member - good for animation
+                  <StaffMember
+                    itemIndex={i}
+                    key={`${member.name}-${i}-${selectedTeams.join("-")}`}
+                    onTeamClick={() => setSelectedTeams([member.team])}
+                    teamData={teamData}
+                    {...member}
+                  />
+                ))}
+              </>
+            )}
+            <div
+              style={{
+                height: 0,
+                flexShrink: 0,
+              }}
+            />
+          </section>
+        </div>
       </div>
     </div>
   );

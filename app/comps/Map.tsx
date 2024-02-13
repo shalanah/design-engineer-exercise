@@ -24,7 +24,7 @@ export const Map = ({ width, height, people }: MapProps) => {
           key={shape.id}
           // @ts-ignore
           d={geoPathGenerator(shape)}
-          style={{ color: "#f0f0f0" }}
+          style={{ color: "#ffffff" }}
           fill="currentColor"
           stroke="currentColor"
           strokeWidth={1}

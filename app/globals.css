@@ -40,7 +40,6 @@ body,
 .body {
   font-family: var(--body-font);
   font-weight: 400;
-  line-height: 1.5;
   margin: 0;
 }
 /* TODO: Add want to use Styled-comps, stitches or another js in css */
