@@ -2,16 +2,11 @@
 
 ## The exercise
 
-Worked on for 2 days as quickly as possible. I'm thinking about working on it more this week just to clean up. So feel free to come back Friday and see if I've made any changes.
+Worked on for 2 days as quickly as possible! I'm not sure if I'll have time to come back to it, but I'm hoping to do a clean up pass by EOD Friday. Feel free to come back to see any changes.
 
-[lLve demo](https://design-engineer-code-assignment.netlify.app/)
+[Site](https://design-engineer-code-assignment.netlify.app/)
 
-## Areas I'd Fix
-
-- Code clean up pass (more componentization)
-- First time working with Next.js kinda reminds me of working with Gatsby. I'd try to integrate a better styling system and understand Next.js better as a whole.
-
-## Getting started
+# Getting started
 
 To get started, run the following commands:
 
