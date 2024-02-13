@@ -6,6 +6,12 @@ Worked on for 2 days as quickly as possible! I'm not sure if I'll have time to c
 
 [Deployed Site](https://design-engineer-code-assignment.netlify.app/)
 
+## Couple of notes
+
+- Used random emojis to allow for uniform backgrounds and higher-res images than provided
+- Would love to do more interaction between list + map but time ran out and would probably show more info in a popup or a popup on the map
+- Hope you enjoy. If the code is too messy I'd come back Friday :)
+
 # Getting started
 
 To get started, run the following commands:
