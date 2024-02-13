@@ -46,36 +46,23 @@ body,
 }
 /* TODO: Add want to use Styled-comps, stitches or another js in css */
 
-/* source https://css-tricks.com/books/greatest-css-tricks/scroll-shadows/ */
-.staff-members-container {
-  background: 
-   /* Shadow Cover TOP */ linear-gradient(
-        white 30%,
-        rgba(255, 255, 255, 0)
-      )
-      center top,
-    /* Shadow Cover BOTTOM */ linear-gradient(rgba(255, 255, 255, 0), white 70%)
-      center bottom,
-    /* Shadow TOP */
-      radial-gradient(
-        farthest-side at 50% 0,
-        rgba(0, 0, 0, 0.05),
-        rgba(0, 0, 0, 0)
-      )
-      center top,
-    /* Shadow BOTTOM */
-      radial-gradient(
-        farthest-side at 50% 100%,
-        rgba(0, 0, 0, 0.05),
-        rgba(0, 0, 0, 0)
-      )
-      center bottom;
-
-  background-repeat: no-repeat;
-  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-  background-attachment: local, local, scroll, scroll;
+/* Utility classes */
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-/* Helpers */
+.pos-full {
+  width: 100%;
+  height: 100%;
+}
+.pos-up-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .d-none {
   display: none;
 }
@@ -122,18 +109,52 @@ body,
   align-items: stretch;
 }
 
-button.teams-button {
-  padding: 5px 10px 5px 12px;
-  border-radius: 20px;
+/* I knot this isn't the norm but I don't use gaps above 15 usually */
+.gap-0 {
+  gap: 0;
 }
-
-@media (hover: hover) {
-  button:focus-visible {
-    outline: 1.5px dashed #000;
-    outline-offset: 3px;
-  }
-  button.teams-button:focus-visible {
-    outline: none;
-    background: #f7f7f7;
-  }
+.gap-1 {
+  gap: 1px;
+}
+.gap-2 {
+  gap: 2px;
+}
+.gap-3 {
+  gap: 3px;
+}
+.gap-4 {
+  gap: 4px;
+}
+.gap-5 {
+  gap: 5px;
+}
+.gap-6 {
+  gap: 6px;
+}
+.gap-7 {
+  gap: 7px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-9 {
+  gap: 9px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-11 {
+  gap: 11px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-13 {
+  gap: 13px;
+}
+.gap-14 {
+  gap: 14px;
+}
+.gap-15 {
+  gap: 15px;
 }

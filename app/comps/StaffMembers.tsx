@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import people from "../../team.json";
-import { StaffMember, StaffMemberProps } from "./StaffMember";
+import { StaffMember } from "./StaffMember";
 import { Select } from "./Select";
 import {
   Cross2Icon,
@@ -8,7 +8,7 @@ import {
   ChevronDownIcon,
 } from "@radix-ui/react-icons";
 import "./StaffMembers.css";
-import { teamColors as colors } from "../utils/teamColors";
+import { teamColors as colors, StaffMemberProps } from "../utils/team";
 import { TeamButton } from "./TeamButton";
 
 const teams = [...new Set(people.data.map((employee) => employee.team))];
