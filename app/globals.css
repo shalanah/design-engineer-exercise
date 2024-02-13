@@ -118,9 +118,18 @@ body,
   align-items: stretch;
 }
 
+button.teams-button {
+  padding: 5px 10px 5px 12px;
+  border-radius: 20px;
+}
+
 @media (hover: hover) {
   button:focus-visible {
     outline: 1.5px dashed #000;
     outline-offset: 3px;
+  }
+  button.teams-button:focus-visible {
+    outline: none;
+    background: #f7f7f7;
   }
 }

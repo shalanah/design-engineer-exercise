@@ -16,25 +16,21 @@
   display: flex;
   align-items: center;
   height: 32px;
-  padding: 0 35px 0 25px;
+  padding: 0 20px 0 25px;
   position: relative;
   user-select: none;
 }
+.SelectItem > span {
+  width: 100%;
+}
 .SelectItem[data-disabled] {
-  color: green;
+  opacity: 0.7;
   pointer-events: none;
 }
 .SelectItem[data-highlighted] {
   outline: none;
   background-color: #f7f7f7;
   color: #222;
-}
-
-.SelectLabel {
-  padding: 0 25px;
-  font-size: 12px;
-  line-height: 25px;
-  color: red;
 }
 
 .SelectItemIndicator {
