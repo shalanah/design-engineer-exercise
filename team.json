@@ -11,7 +11,11 @@
       "start_date": "Aug 1, 2010",
       "country": "United States",
       "city": "Boulder",
-      "emoji": "memo_1"
+      "emoji": "memo_1",
+      "coord": {
+        "lat": 40.015,
+        "lng": -105.2705
+      }
     },
     {
       "team": "People",
@@ -23,7 +27,11 @@
       "start_date": "Sep 1, 2012",
       "country": "United States",
       "city": "Portland",
-      "emoji": "memo_2"
+      "emoji": "memo_2",
+      "coord": {
+        "lat": 45.5051,
+        "lng": -122.675
+      }
     },
     {
       "team": "Product",
@@ -35,7 +43,11 @@
       "start_date": "Oct 31, 2020",
       "country": "United States",
       "city": "Denver",
-      "emoji": "memo_3"
+      "emoji": "memo_3",
+      "coord": {
+        "lat": 39.7392,
+        "lng": -104.9903
+      }
     },
     {
       "team": "Advocacy",
@@ -47,7 +59,11 @@
       "start_date": "Feb 18, 2013",
       "country": "Australia",
       "city": "Sydney",
-      "emoji": "memo_4"
+      "emoji": "memo_4",
+      "coord": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      }
     },
     {
       "team": "People",
@@ -59,7 +75,11 @@
       "start_date": "Nov 26, 2018",
       "country": "United States",
       "city": "Nashville",
-      "emoji": "memo_5"
+      "emoji": "memo_5",
+      "coord": {
+        "lat": 36.1627,
+        "lng": -86.7816
+      }
     },
     {
       "team": "People",
@@ -71,7 +91,11 @@
       "start_date": "Nov 30, 2021",
       "country": "United States",
       "city": "Grand Rapids",
-      "emoji": "memo_6"
+      "emoji": "memo_6",
+      "coord": {
+        "lat": 42.9634,
+        "lng": -85.6681
+      }
     },
     {
       "team": "Finance",
@@ -83,7 +107,11 @@
       "start_date": "Mar 28, 2016",
       "country": "United States",
       "city": "Louisville",
-      "emoji": "memo_7"
+      "emoji": "memo_7",
+      "coord": {
+        "lat": 38.2527,
+        "lng": -85.7585
+      }
     },
     {
       "team": "Finance",
@@ -95,7 +123,11 @@
       "start_date": "Nov 12, 2018",
       "country": "United States",
       "city": "Jacksonville",
-      "emoji": "memo_8"
+      "emoji": "memo_8",
+      "coord": {
+        "lat": 30.3322,
+        "lng": -81.6557
+      }
     },
     {
       "team": "Finance",
@@ -107,7 +139,11 @@
       "start_date": "Apr 19, 2021",
       "country": "Kenya",
       "city": "Nairobi",
-      "emoji": "memo_9"
+      "emoji": "memo_9",
+      "coord": {
+        "lat": -1.2864,
+        "lng": 36.8172
+      }
     },
     {
       "team": "Marketing",
@@ -119,7 +155,11 @@
       "start_date": "Oct 14, 2015",
       "country": "Australia",
       "city": "Sydney",
-      "emoji": "memo_10"
+      "emoji": "memo_10",
+      "coord": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      }
     },
     {
       "team": "Marketing",
@@ -131,7 +171,11 @@
       "start_date": "Feb 1, 2016",
       "country": "United States",
       "city": "Nashville",
-      "emoji": "memo_11"
+      "emoji": "memo_11",
+      "coord": {
+        "lat": 36.1627,
+        "lng": -86.7816
+      }
     },
     {
       "team": "Marketing",
@@ -143,7 +187,11 @@
       "start_date": "Apr 16, 2020",
       "country": "",
       "city": "",
-      "emoji": "memo_12"
+      "emoji": "memo_12",
+      "coord": {
+        "lat": 0,
+        "lng": 0
+      }
     },
     {
       "team": "Engineering",
@@ -155,7 +203,11 @@
       "start_date": "Jan 4, 2016",
       "country": "",
       "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
-      "emoji": "memo_13"
+      "emoji": "memo_13",
+      "coord": {
+        "lat": 22.3375,
+        "lng": 114.1557
+      }
     },
     {
       "team": "Engineering",
@@ -167,7 +219,11 @@
       "start_date": "Jun 1, 2012",
       "country": "United States",
       "city": "San Francisco",
-      "emoji": "memo_14"
+      "emoji": "memo_14",
+      "coord": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      }
     },
     {
       "team": "Engineering",
@@ -179,7 +235,11 @@
       "start_date": "Nov 9, 2015",
       "country": "France",
       "city": "Montpellier",
-      "emoji": "memo_15"
+      "emoji": "memo_15",
+      "coord": {
+        "lat": 43.6108,
+        "lng": 3.8767
+      }
     },
     {
       "team": "Engineering",
@@ -191,7 +251,11 @@
       "start_date": "Jan 6, 2015",
       "country": "Taiwan",
       "city": "Taipei",
-      "emoji": "memo_16"
+      "emoji": "memo_16",
+      "coord": {
+        "lat": 25.033,
+        "lng": 121.5654
+      }
     },
     {
       "team": "Engineering",
@@ -203,7 +267,11 @@
       "start_date": "Apr 25, 2016",
       "country": "Canada",
       "city": "Vancouver",
-      "emoji": "memo_17"
+      "emoji": "memo_17",
+      "coord": {
+        "lat": 49.2827,
+        "lng": -123.1207
+      }
     },
     {
       "team": "Engineering",
@@ -215,7 +283,11 @@
       "start_date": "Jul 18, 2016",
       "country": "United Kingdom",
       "city": "Brighton",
-      "emoji": "memo_18"
+      "emoji": "memo_18",
+      "coord": {
+        "lat": 50.8225,
+        "lng": -0.1372
+      }
     },
     {
       "team": "Engineering",
@@ -227,7 +299,11 @@
       "start_date": "Dec 1, 2014",
       "country": "Spain",
       "city": "Madrid",
-      "emoji": "memo_19"
+      "emoji": "memo_19",
+      "coord": {
+        "lat": 40.4168,
+        "lng": -3.7038
+      }
     },
     {
       "team": "Engineering",
@@ -239,7 +315,11 @@
       "start_date": "Jul 14, 2014",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_20"
+      "emoji": "memo_20",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Engineering",
@@ -251,7 +331,11 @@
       "start_date": "Feb 9, 2015",
       "country": "France",
       "city": "Montpellier",
-      "emoji": "memo_21"
+      "emoji": "memo_21",
+      "coord": {
+        "lat": 43.6108,
+        "lng": 3.8767
+      }
     },
     {
       "team": "Engineering",
@@ -263,7 +347,11 @@
       "start_date": "Feb 3, 2014",
       "country": "Taiwan",
       "city": "Taipei",
-      "emoji": "memo_22"
+      "emoji": "memo_22",
+      "coord": {
+        "lat": 25.033,
+        "lng": 121.5654
+      }
     },
     {
       "team": "Engineering",
@@ -275,7 +363,11 @@
       "start_date": "Aug 1, 2018",
       "country": "Spain",
       "city": "Alicante",
-      "emoji": "memo_23"
+      "emoji": "memo_23",
+      "coord": {
+        "lat": 38.3452,
+        "lng": -0.481
+      }
     },
     {
       "team": "Engineering",
@@ -287,7 +379,11 @@
       "start_date": "Jul 25, 2018",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_24"
+      "emoji": "memo_24",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Engineering",
@@ -299,7 +395,11 @@
       "start_date": "Oct 29, 2018",
       "country": "",
       "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
-      "emoji": "memo_25"
+      "emoji": "memo_25",
+      "coord": {
+        "lat": 22.3375,
+        "lng": 114.1557
+      }
     },
     {
       "team": "Engineering",
@@ -311,7 +411,11 @@
       "start_date": "Jun 5, 2019",
       "country": "Netherlands",
       "city": "Gorredijk",
-      "emoji": "memo_26"
+      "emoji": "memo_26",
+      "coord": {
+        "lat": 53.0094,
+        "lng": 6.0675
+      }
     },
     {
       "team": "Engineering",
@@ -323,7 +427,11 @@
       "start_date": "May 30, 2019",
       "country": "Switzerland",
       "city": "Zürich",
-      "emoji": "memo_27"
+      "emoji": "memo_27",
+      "coord": {
+        "lat": 47.3769,
+        "lng": 8.5417
+      }
     },
     {
       "team": "Engineering",
@@ -335,7 +443,11 @@
       "start_date": "Jul 1, 2019",
       "country": "United States",
       "city": "New York",
-      "emoji": "memo_28"
+      "emoji": "memo_28",
+      "coord": {
+        "lat": 40.7128,
+        "lng": -74.006
+      }
     },
     {
       "team": "Engineering",
@@ -347,7 +459,11 @@
       "start_date": "Jan 21, 2016",
       "country": "Ireland",
       "city": "Wexford",
-      "emoji": "memo_29"
+      "emoji": "memo_29",
+      "coord": {
+        "lat": 52.3369,
+        "lng": -6.4633
+      }
     },
     {
       "team": "Engineering",
@@ -359,7 +475,11 @@
       "start_date": "May 10, 2021",
       "country": "Spain",
       "city": "Madrid",
-      "emoji": "memo_30"
+      "emoji": "memo_30",
+      "coord": {
+        "lat": 40.4168,
+        "lng": -3.7038
+      }
     },
     {
       "team": "Engineering",
@@ -371,7 +491,11 @@
       "start_date": "Jun 1, 2021",
       "country": "",
       "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
-      "emoji": "memo_31"
+      "emoji": "memo_31",
+      "coord": {
+        "lat": 22.3375,
+        "lng": 114.1557
+      }
     },
     {
       "team": "Engineering",
@@ -383,7 +507,11 @@
       "start_date": "Jun 7, 2021",
       "country": "Poland",
       "city": "Warsaw",
-      "emoji": "memo_32"
+      "emoji": "memo_32",
+      "coord": {
+        "lat": 52.2297,
+        "lng": 21.0122
+      }
     },
     {
       "team": "Engineering",
@@ -395,7 +523,11 @@
       "start_date": "Jun 14, 2021",
       "country": "South Africa",
       "city": "Cape Town",
-      "emoji": "memo_33"
+      "emoji": "memo_33",
+      "coord": {
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
     },
     {
       "team": "Engineering",
@@ -407,7 +539,11 @@
       "start_date": "Aug 2, 2021",
       "country": "Australia",
       "city": "Sydney",
-      "emoji": "memo_34"
+      "emoji": "memo_34",
+      "coord": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      }
     },
     {
       "team": "Product",
@@ -419,7 +555,11 @@
       "start_date": "Apr 1, 2019",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_35"
+      "emoji": "memo_35",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Product",
@@ -431,7 +571,11 @@
       "start_date": "Feb 17, 2020",
       "country": "Netherlands",
       "city": "Amsterdam",
-      "emoji": "memo_1"
+      "emoji": "memo_1",
+      "coord": {
+        "lat": 52.3676,
+        "lng": 4.9041
+      }
     },
     {
       "team": "Design",
@@ -443,7 +587,11 @@
       "start_date": "Jul 5, 2021",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_2"
+      "emoji": "memo_2",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Design",
@@ -455,7 +603,11 @@
       "start_date": "Sep 13, 2021",
       "country": "Morocco",
       "city": "Casablanca",
-      "emoji": "memo_3"
+      "emoji": "memo_3",
+      "coord": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
     },
     {
       "team": "Data",
@@ -467,7 +619,11 @@
       "start_date": "Mar 16, 2015",
       "country": "United States",
       "city": "Louisville",
-      "emoji": "memo_4"
+      "emoji": "memo_4",
+      "coord": {
+        "lat": 38.2527,
+        "lng": -85.7585
+      }
     },
     {
       "team": "Advocacy",
@@ -479,7 +635,11 @@
       "start_date": "Nov 18, 2013",
       "country": "United States",
       "city": "Wesley Chapel",
-      "emoji": "memo_5"
+      "emoji": "memo_5",
+      "coord": {
+        "lat": 28.1798,
+        "lng": -82.3503
+      }
     },
     {
       "team": "Advocacy",
@@ -491,7 +651,11 @@
       "start_date": "Apr 25, 2016",
       "country": "United States",
       "city": "Bonners Ferry",
-      "emoji": "memo_6"
+      "emoji": "memo_6",
+      "coord": {
+        "lat": 48.6914,
+        "lng": -116.3131
+      }
     },
     {
       "team": "Advocacy",
@@ -503,7 +667,11 @@
       "start_date": "May 5, 2015",
       "country": "United Kingdom",
       "city": "Manchester",
-      "emoji": "memo_7"
+      "emoji": "memo_7",
+      "coord": {
+        "lat": 53.4808,
+        "lng": -2.2426
+      }
     },
     {
       "team": "Advocacy",
@@ -515,7 +683,11 @@
       "start_date": "Nov 16, 2015",
       "country": "United States",
       "city": "Denver",
-      "emoji": "memo_8"
+      "emoji": "memo_8",
+      "coord": {
+        "lat": 39.7392,
+        "lng": -104.9903
+      }
     },
     {
       "team": "Advocacy",
@@ -527,7 +699,11 @@
       "start_date": "Mar 7, 2014",
       "country": "United Kingdom",
       "city": "London",
-      "emoji": "memo_9"
+      "emoji": "memo_9",
+      "coord": {
+        "lat": 51.5074,
+        "lng": -0.1278
+      }
     },
     {
       "team": "Advocacy",
@@ -539,7 +715,11 @@
       "start_date": "Jan 4, 2016",
       "country": "United Kingdom",
       "city": "Brighton",
-      "emoji": "memo_10"
+      "emoji": "memo_10",
+      "coord": {
+        "lat": 50.8225,
+        "lng": -0.1372
+      }
     },
     {
       "team": "Advocacy",
@@ -551,7 +731,11 @@
       "start_date": "Dec 8, 2016",
       "country": "United States",
       "city": "Kalispell",
-      "emoji": "memo_11"
+      "emoji": "memo_11",
+      "coord": {
+        "lat": 48.2023,
+        "lng": -114.3126
+      }
     },
     {
       "team": "Advocacy",
@@ -563,7 +747,11 @@
       "start_date": "Mar 28, 2016",
       "country": "United States",
       "city": "Los Angeles",
-      "emoji": "memo_12"
+      "emoji": "memo_12",
+      "coord": {
+        "lat": 34.0522,
+        "lng": -118.2437
+      }
     },
     {
       "team": "Advocacy",
@@ -575,7 +763,11 @@
       "start_date": "Nov 9, 2015",
       "country": "United Kingdom",
       "city": "London",
-      "emoji": "memo_13"
+      "emoji": "memo_13",
+      "coord": {
+        "lat": 51.5074,
+        "lng": -0.1278
+      }
     },
     {
       "team": "Advocacy",
@@ -587,7 +779,11 @@
       "start_date": "Mar 14, 2016",
       "country": "United States",
       "city": "Tustin",
-      "emoji": "memo_14"
+      "emoji": "memo_14",
+      "coord": {
+        "lat": 33.7459,
+        "lng": -117.8262
+      }
     },
     {
       "team": "Advocacy",
@@ -599,7 +795,11 @@
       "start_date": "Aug 17, 2015",
       "country": "United States",
       "city": "Philadelphia",
-      "emoji": "memo_15"
+      "emoji": "memo_15",
+      "coord": {
+        "lat": 39.9526,
+        "lng": -75.1652
+      }
     },
     {
       "team": "Advocacy",
@@ -611,7 +811,11 @@
       "start_date": "Jan 22, 2018",
       "country": "United States",
       "city": "Portland",
-      "emoji": "memo_16"
+      "emoji": "memo_16",
+      "coord": {
+        "lat": 45.5051,
+        "lng": -122.675
+      }
     },
     {
       "team": "Advocacy",
@@ -623,7 +827,11 @@
       "start_date": "Apr 28, 2014",
       "country": "",
       "city": "",
-      "emoji": "memo_17"
+      "emoji": "memo_17",
+      "coord": {
+        "lat": 0,
+        "lng": 0
+      }
     },
     {
       "team": "Advocacy",
@@ -635,7 +843,11 @@
       "start_date": "Aug 31, 2015",
       "country": "United States",
       "city": "Louisville",
-      "emoji": "memo_18"
+      "emoji": "memo_18",
+      "coord": {
+        "lat": 38.2527,
+        "lng": -85.7585
+      }
     },
     {
       "team": "Advocacy",
@@ -647,7 +859,11 @@
       "start_date": "Sep 4, 2018",
       "country": "United States",
       "city": "Chicago",
-      "emoji": "memo_19"
+      "emoji": "memo_19",
+      "coord": {
+        "lat": 41.8781,
+        "lng": -87.6298
+      }
     },
     {
       "team": "Advocacy",
@@ -659,7 +875,11 @@
       "start_date": "Jul 1, 2019",
       "country": "Brunei",
       "city": "Bandar Seri Begawan",
-      "emoji": "memo_20"
+      "emoji": "memo_20",
+      "coord": {
+        "lat": 4.9407,
+        "lng": 114.9481
+      }
     },
     {
       "team": "Advocacy",
@@ -671,7 +891,11 @@
       "start_date": "Feb 10, 2021",
       "country": "",
       "city": "Church Of Living Grace (Cheung Sha Wan) 基督教恩霖堂(長沙灣堂)",
-      "emoji": "memo_21"
+      "emoji": "memo_21",
+      "coord": {
+        "lat": 22.3375,
+        "lng": 114.1557
+      }
     },
     {
       "team": "Advocacy",
@@ -683,7 +907,11 @@
       "start_date": "Sep 20, 2021",
       "country": "United States",
       "city": "Brooklyn",
-      "emoji": "memo_22"
+      "emoji": "memo_22",
+      "coord": {
+        "lat": 40.6782,
+        "lng": -73.9442
+      }
     },
     {
       "team": "Advocacy",
@@ -695,7 +923,11 @@
       "start_date": "Dec 13, 2021",
       "country": "Thailand",
       "city": "Nakhon Ratchasima",
-      "emoji": "memo_23"
+      "emoji": "memo_23",
+      "coord": {
+        "lat": 14.9799,
+        "lng": 102.0978
+      }
     },
     {
       "team": "Marketing",
@@ -707,7 +939,11 @@
       "start_date": "Jan 10, 2022",
       "country": "Canada",
       "city": "Ottawa",
-      "emoji": "memo_24"
+      "emoji": "memo_24",
+      "coord": {
+        "lat": 45.4215,
+        "lng": -75.6972
+      }
     },
     {
       "team": "Marketing",
@@ -719,7 +955,11 @@
       "start_date": "Feb 23, 2022",
       "country": "Nigeria",
       "city": "Lagos",
-      "emoji": "memo_25"
+      "emoji": "memo_25",
+      "coord": {
+        "lat": 6.5244,
+        "lng": 3.3792
+      }
     },
     {
       "team": "Design",
@@ -731,7 +971,11 @@
       "start_date": "Mar 21, 2022",
       "country": "United States",
       "city": "Berkeley",
-      "emoji": "memo_26"
+      "emoji": "memo_26",
+      "coord": {
+        "lat": 37.8716,
+        "lng": -122.2727
+      }
     },
     {
       "team": "Marketing",
@@ -743,7 +987,11 @@
       "start_date": "Apr 11, 2022",
       "country": "United States",
       "city": "New Braunfels",
-      "emoji": "memo_27"
+      "emoji": "memo_27",
+      "coord": {
+        "lat": 29.703,
+        "lng": -98.1245
+      }
     },
     {
       "team": "Engineering",
@@ -755,7 +1003,11 @@
       "start_date": "Apr 25, 2022",
       "country": "Nigeria",
       "city": "Lagos",
-      "emoji": "memo_28"
+      "emoji": "memo_28",
+      "coord": {
+        "lat": 6.5244,
+        "lng": 3.3792
+      }
     },
     {
       "team": "Engineering",
@@ -767,7 +1019,11 @@
       "start_date": "Jun 27, 2022",
       "country": "United States",
       "city": "Nashville",
-      "emoji": "memo_29"
+      "emoji": "memo_29",
+      "coord": {
+        "lat": 36.1627,
+        "lng": -86.7816
+      }
     },
     {
       "team": "Engineering",
@@ -779,7 +1035,11 @@
       "start_date": "Nov 14, 2022",
       "country": "Spain",
       "city": "Madrid",
-      "emoji": "memo_30"
+      "emoji": "memo_30",
+      "coord": {
+        "lat": 40.4168,
+        "lng": -3.7038
+      }
     },
     {
       "team": "Design",
@@ -791,7 +1051,11 @@
       "start_date": "Jan 23, 2023",
       "country": "Malta",
       "city": "Valletta",
-      "emoji": "memo_31"
+      "emoji": "memo_31",
+      "coord": {
+        "lat": 35.8989,
+        "lng": 14.5146
+      }
     },
     {
       "team": "Product",
@@ -803,7 +1067,11 @@
       "start_date": "Apr 28, 2023",
       "country": "United States",
       "city": "Lehi",
-      "emoji": "memo_32"
+      "emoji": "memo_32",
+      "coord": {
+        "lat": 40.3916,
+        "lng": -111.8508
+      }
     },
     {
       "team": "Product",
@@ -815,7 +1083,11 @@
       "start_date": "May 9, 2023",
       "country": "United States",
       "city": "Lunenburg",
-      "emoji": "memo_33"
+      "emoji": "memo_33",
+      "coord": {
+        "lat": 42.5945,
+        "lng": -71.7248
+      }
     },
     {
       "team": "Design",
@@ -827,7 +1099,11 @@
       "start_date": "Jun 6, 2023",
       "country": "Canada",
       "city": "Victoria",
-      "emoji": "memo_34"
+      "emoji": "memo_34",
+      "coord": {
+        "lat": 48.4284,
+        "lng": -123.3656
+      }
     },
     {
       "team": "Engineering",
@@ -839,7 +1115,11 @@
       "start_date": "Jun 13, 2023",
       "country": "Poland",
       "city": "Poznań",
-      "emoji": "memo_35"
+      "emoji": "memo_35",
+      "coord": {
+        "lat": 52.4064,
+        "lng": 16.9252
+      }
     },
     {
       "team": "Engineering",
@@ -851,7 +1131,11 @@
       "start_date": "Jul 19, 2023",
       "country": "Estonia",
       "city": "Tallinn",
-      "emoji": "memo_1"
+      "emoji": "memo_1",
+      "coord": {
+        "lat": 59.437,
+        "lng": 24.7536
+      }
     },
     {
       "team": "Marketing",
@@ -863,7 +1147,11 @@
       "start_date": "Aug 15, 2023",
       "country": "South Africa",
       "city": "Cape Town",
-      "emoji": "memo_2"
+      "emoji": "memo_2",
+      "coord": {
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
     },
     {
       "team": "Design",
@@ -875,7 +1163,11 @@
       "start_date": "Nov 28, 2023",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_3"
+      "emoji": "memo_3",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Engineering",
@@ -887,7 +1179,11 @@
       "start_date": "Dec 12, 2023",
       "country": "Spain",
       "city": "Barcelona",
-      "emoji": "memo_4"
+      "emoji": "memo_4",
+      "coord": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
     },
     {
       "team": "Engineering",
@@ -899,7 +1195,11 @@
       "start_date": "Dec 13, 2023",
       "country": "Nigeria",
       "city": "Lagos",
-      "emoji": "memo_5"
+      "emoji": "memo_5",
+      "coord": {
+        "lat": 6.5244,
+        "lng": 3.3792
+      }
     }
   ]
 }

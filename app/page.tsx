@@ -1,10 +1,11 @@
 "use client";
 
 import { StaffMembers } from "./comps/StaffMembers";
+import { Map } from "./comps/Map";
 
 export default function Home() {
   return (
-    <main style={{ height: "200vh" }}>
+    <main>
       <StaffMembers />
     </main>
   );
