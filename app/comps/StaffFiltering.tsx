@@ -8,6 +8,7 @@ import {
 import { TeamButton } from "./TeamButton";
 import { teams, teamData } from "../utils/team";
 import "./StaffFiltering.css";
+import useStaffContext from "../hooks/useStaffContext";
 
 const selectItems = [
   { text: "All", value: "all" },
@@ -41,30 +42,17 @@ const selectItems = [
   }),
 ];
 
-export const StaffFiltering = ({
-  setSearch,
-  isSearching,
-  showAllTeams,
-  selectedTeams,
-  setSelectedTeams,
-  setAllTeamsSelected,
-  count,
-  total,
-}: {
-  setSearch: React.Dispatch<
-    React.SetStateAction<{
-      search: string;
-      isSearching: boolean;
-    }>
-  >;
-  isSearching: boolean;
-  showAllTeams: boolean;
-  selectedTeams: string[];
-  setSelectedTeams: React.Dispatch<React.SetStateAction<string[]>>;
-  setAllTeamsSelected: () => void;
-  count: number;
-  total: number;
-}) => {
+export const StaffFiltering = () => {
+  const {
+    setSearch,
+    setAllTeamsSelected,
+    selectedTeams,
+    showAllTeams,
+    count,
+    total,
+    isSearching,
+    setSelectedTeams,
+  } = useStaffContext();
   return (
     <div
       className="d-flex align-items-center"

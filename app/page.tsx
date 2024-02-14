@@ -1,12 +1,14 @@
 "use client";
 
 import { StaffMembers } from "./comps/StaffMembers";
-import { Map } from "./comps/Map";
+import { StaffContextProvider } from "./hooks/useStaffContext";
 
 export default function Home() {
   return (
     <main>
-      <StaffMembers />
+      <StaffContextProvider>
+        <StaffMembers />
+      </StaffContextProvider>
     </main>
   );
 }

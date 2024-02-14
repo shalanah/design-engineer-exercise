@@ -1,59 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { StaffMember } from "./StaffMember";
 import "./StaffMembers.css";
-import { teams, StaffMemberProps, teamData } from "../utils/team";
+import { teamData } from "../utils/team";
 import { Map } from "./Map";
 import { useMeasure } from "react-use";
 import { StaffFiltering } from "./StaffFiltering";
 import people from "../../team.json";
-
-// Function to normalize strings by removing accents
-function normalizeString(str: string): string {
-  return str
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-}
-const textSearch = (member: StaffMemberProps, cleanSearch: string) =>
-  (
-    [
-      "name",
-      "team",
-      "role",
-      "location",
-      "country",
-      "city",
-    ] as (keyof StaffMemberProps)[]
-  ).some((key) =>
-    normalizeString(member[key]).includes(normalizeString(cleanSearch))
-  );
+import useStaffContext from "../hooks/useStaffContext";
 
 // TODO: Code clean up
 // TODO: Animation tidy up
 export const StaffMembers = () => {
-  const [selectedTeams, setSelectedTeams] = useState(teams); // maybe someday multiple departments can be selected
-  const [{ search, isSearching }, setSearch] = useState({
-    search: "",
-    isSearching: false,
-  });
-  const setAllTeamsSelected = () => setSelectedTeams(teams);
-  const total = people.data.length;
-  const showAllTeams = selectedTeams.length === teams.length;
-  const cleanSearch = search.trim();
-  const useSearch = cleanSearch.length > 0;
-  const filteredPeople = people.data.filter(
-    (member) =>
-      selectedTeams.includes(member.team) &&
-      (!isSearching || !useSearch || textSearch(member, cleanSearch))
-  );
-  const count = filteredPeople.length;
-  const outsideSearch =
-    count === 0
-      ? people.data.filter((member) => textSearch(member, cleanSearch))
-      : [];
-  const [mapRef, { width, height }] = useMeasure();
-  // const { width: winWidth, height: winHeight } = useWindowSize();
+  const {
+    selectedTeams,
+    count,
+    total,
+    isSearching,
+    setSelectedTeams,
+    filteredPeople,
+    outsideSearch,
+    cleanSearch,
+  } = useStaffContext();
 
+  const [mapRef, { width, height }] = useMeasure();
   const [windowSize, setWindowSize] = useState<{
     width: number;
     height: number;
@@ -72,7 +41,7 @@ export const StaffMembers = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
+  }, []);
 
   const horizSetUp = windowSize.width >= 1400;
 
@@ -149,17 +118,7 @@ export const StaffMembers = () => {
           }}
           className="d-flex flex-column"
         >
-          {/* TODO: Instead of local state move to context (less prop-drilling) */}
-          <StaffFiltering
-            setSearch={setSearch}
-            setAllTeamsSelected={setAllTeamsSelected}
-            selectedTeams={selectedTeams}
-            showAllTeams={showAllTeams}
-            count={count}
-            total={total}
-            isSearching={isSearching}
-            setSelectedTeams={setSelectedTeams}
-          />
+          <StaffFiltering />
           <section
             className="staff-members-container"
             key={selectedTeams.join("-")}
