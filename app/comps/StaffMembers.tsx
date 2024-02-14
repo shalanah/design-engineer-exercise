@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { StaffMember } from "./StaffMember";
 import "./StaffMembers.css";
 import { teamData } from "../utils/team";
@@ -20,35 +20,17 @@ export const StaffMembers = () => {
     filteredPeople,
     outsideSearch,
     cleanSearch,
+    windowSize,
+    horizSetUp,
   } = useStaffContext();
 
   const [mapRef, { width, height }] = useMeasure();
-  const [windowSize, setWindowSize] = useState<{
-    width: number;
-    height: number;
-  }>({
-    width: 0,
-    height: 0,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const horizSetUp = windowSize.width >= 1400;
-
-  if (windowSize.width === 0) return null; // let's not render anything if we don't have a window size yet
   return (
     <div
       style={{
+        opacity: windowSize.width === 0 ? 0 : 1,
+        transition: "opacity .2s",
+        pointerEvents: windowSize.width === 0 ? "none" : "auto",
         width: "100vw",
         height: "100dvh",
         padding: horizSetUp ? "max(16vmin, 15px)" : 20,
@@ -86,28 +68,26 @@ export const StaffMembers = () => {
               padding: horizSetUp ? "40px" : "15px",
             }}
           >
-            <div>
-              <Map
-                width={horizSetUp ? width - 40 : width - 30}
-                height={horizSetUp ? height - 40 : 210}
-                people={{
-                  type: "FeatureCollection",
-                  features: people.data.map((employee) => {
-                    return {
-                      type: "Feature",
-                      properties: {
-                        fill: teamData[employee.team].color,
-                        active: filteredPeople.includes(employee),
-                      },
-                      geometry: {
-                        type: "Point",
-                        coordinates: [employee.coord.lng, employee.coord.lat],
-                      },
-                    };
-                  }),
-                }}
-              />
-            </div>
+            <Map
+              width={horizSetUp ? width - 40 : width - 30}
+              height={horizSetUp ? height - 40 : 210}
+              people={{
+                type: "FeatureCollection",
+                features: people.data.map((employee) => {
+                  return {
+                    type: "Feature",
+                    properties: {
+                      fill: teamData[employee.team].color,
+                      active: filteredPeople.includes(employee),
+                    },
+                    geometry: {
+                      type: "Point",
+                      coordinates: [employee.coord.lng, employee.coord.lat],
+                    },
+                  };
+                }),
+              }}
+            />
           </div>
         </div>
         {/* List */}
@@ -121,20 +101,13 @@ export const StaffMembers = () => {
           <StaffFiltering />
           <section
             className="staff-members-container"
-            key={selectedTeams.join("-")}
+            key={selectedTeams.join("-")} // easy reset scroll to top when teams change
             style={{
-              overscrollBehavior: "contain",
               flex: horizSetUp ? 1 : "",
-              overflowY: "auto",
-              position: "relative",
-              gap: 10,
-              display: "flex",
-              flexDirection: "column",
-              scrollMargin: "10px",
-              borderBottom: "1px solid #efefef",
               height: horizSetUp ? "" : "calc(100dvh - 340px)",
             }}
           >
+            {/* Filler for top of scroll */}
             <div
               style={{
                 height: 10,
@@ -142,7 +115,6 @@ export const StaffMembers = () => {
               }}
             />
             {filteredPeople.map((member, i: number) => (
-              // might be nice to add id attached to each member - good for animation
               <StaffMember
                 noAnimation={isSearching}
                 itemIndex={i}
@@ -198,6 +170,7 @@ export const StaffMembers = () => {
                 ))}
               </>
             )}
+            {/* Filler for bottom of scroll */}
             <div
               style={{
                 height: 0,

@@ -1,4 +1,10 @@
-import React, { useContext, createContext, useState, ReactNode } from "react";
+import React, {
+  useContext,
+  createContext,
+  useState,
+  ReactNode,
+  useEffect,
+} from "react";
 import people from "../../team.json";
 import { teams, StaffMemberProps } from "../utils/team";
 
@@ -40,6 +46,11 @@ interface StaffContextInterface {
   setSelectedTeams: React.Dispatch<React.SetStateAction<string[]>>;
   filteredPeople: StaffMemberProps[];
   cleanSearch: string;
+  windowSize: {
+    width: number;
+    height: number;
+  };
+  horizSetUp: boolean;
 }
 
 // Game state... could probably be broken out into smaller files / hooks
@@ -65,6 +76,28 @@ export const StaffContextProvider = ({ children }: { children: ReactNode }) => {
     count === 0
       ? people.data.filter((member) => textSearch(member, cleanSearch))
       : [];
+
+  const [windowSize, setWindowSize] = useState<{
+    width: number;
+    height: number;
+  }>({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const horizSetUp = windowSize.width >= 1400;
   return (
     <StaffContext.Provider
       value={{
@@ -79,6 +112,8 @@ export const StaffContextProvider = ({ children }: { children: ReactNode }) => {
         setSelectedTeams,
         filteredPeople,
         cleanSearch,
+        windowSize,
+        horizSetUp,
       }}
     >
       {children}

@@ -33,4 +33,12 @@
   background-repeat: no-repeat;
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
   background-attachment: local, local, scroll, scroll;
+
+  overflow-y: auto;
+  position: relative;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #efefef;
+  overscroll-behavior: contain;
 }
