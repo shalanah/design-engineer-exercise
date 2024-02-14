@@ -36,14 +36,17 @@ export const Map = ({ width, height, people }: MapProps) => {
   const allMarkers = people.features.map((feat, i) => {
     // @ts-ignore
     const [x, y] = projection(feat.geometry.coordinates);
-    // TODO: swap out the pin design add scale animation
-    // TODO: add even more active hover state
     return (
-      <g transform={`translate(${x - 2} ${y - 2})`} key={i}>
-        <circle
-          r={5}
+      <g transform={`translate(${x - 1.5} ${y - 4})`} key={i}>
+        <path
+          style={{
+            transformOrigin: "bottom center",
+            transform: feat.properties?.active ? `scale(5)` : `scale(2)`,
+            transition: ".2s",
+          }}
           fill={feat.properties?.active ? feat.properties?.fill : "transparent"}
-          style={{ transition: ".2s" }}
+          d="M1.5-0.1C0.7-0.1,0,0.6,0,1.4c0,0.8,0.7,2,1.4,2.5c0.1,0,0.1,0,0.2,0C2.3,3.5,3,2.2,3,1.4C3,0.6,2.3-0.1,1.5-0.1z M1.5,2.2
+	c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C2.2,1.9,1.9,2.2,1.5,2.2z"
         />
       </g>
     );
