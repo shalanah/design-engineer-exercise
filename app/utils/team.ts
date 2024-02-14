@@ -1,3 +1,5 @@
+import people from "../../team.json";
+
 export const teamColors = [
   "#2962FF",
   "#9500FF",
@@ -9,6 +11,20 @@ export const teamColors = [
   "#008db4",
   "#444",
 ];
+
+export const teams = [...new Set(people.data.map((employee) => employee.team))];
+
+export const teamData = Object.fromEntries(
+  teams.map((department, i) => [
+    department,
+    {
+      bg: teamColors[i],
+      color: teamColors[i],
+      count: people.data.filter((employee) => employee.team === department)
+        .length,
+    },
+  ])
+);
 
 export const getShorthandCountry = (country: string) => {
   switch (country) {

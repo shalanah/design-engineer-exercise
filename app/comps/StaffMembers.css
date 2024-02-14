@@ -1,61 +1,7 @@
-#search {
-  /* background: red; */
-  outline: 1px solid currentColor;
-  /* width: 2%; */
-  overflow: hidden;
-  transition: transform 0.3s, opacity 0.3s;
-  padding: 5px 5px 5px 35px;
-  font-size: 1rem;
-  position: absolute;
-  left: 22px;
-  bottom: 10px;
-  border-radius: 20px;
-  background: #fff;
-  width: calc(100% - 120px);
-  transform-origin: left;
-}
-#search::placeholder {
-  transition: 0.25s 0.1s color;
-  color: currentColor;
-}
-#search.hide {
-  transform: scale(0.8, 1);
-  opacity: 0;
-  pointer-events: none;
-}
-#search.hide::placeholder {
-  color: rgba(255, 255, 255, 0);
-  transition: none;
-}
-#search::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  height: 0;
-  width: 0;
-}
-#search.show {
-  transform: scale(1);
-  opacity: 1;
-}
-.search-icon {
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-
-button.teams-button {
-  padding: 5px 10px 5px 12px;
-  border-radius: 20px;
-}
-
 @media (hover: hover) {
   button:focus-visible {
     outline: 1.5px dashed #000;
     outline-offset: 3px;
-  }
-  button.teams-button:focus-visible {
-    outline: none;
-    background: #f7f7f7;
   }
 }
 
