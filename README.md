@@ -18,9 +18,13 @@
 
 ## Screenshots
 
-### Responsive UI
+### Desktop UI
 
-<img width="1888" alt="Screenshot 2024-03-12 at 11 25 58 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/1d241c78-ef78-4645-b93f-e85590764fa4">
+<img width="1670" alt="Screenshot 2024-03-12 at 11 42 39 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/41d26969-9d73-4504-a088-cccaba4fc36a">
+
+### Mobile UI
+
+<img width="681" alt="Screenshot 2024-03-12 at 11 43 13 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/394051bc-fc66-469c-87a9-145471239a76">
 
 ### Filtering
 
