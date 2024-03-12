@@ -1,24 +1,37 @@
 # Design Engineer Async Exercise
 
-## The exercise
-
-Worked on for 2 days as quickly as possible! I'm not sure if I'll have time to come back to it, but I'm hoping to do a clean up pass by EOD Friday. Feel free to come back to see any changes.
+## Deployed Site
 
 [Deployed Site](https://design-engineer-code-assignment.netlify.app/)
 
+## Features
+
+- Responsive
+- Search
+- Filtering
+- Showing location
+
 ## Couple of notes
 
-- Used random emojis to allow for uniform backgrounds and higher-res images than provided
-- Would love to do more interaction between list + map - ran out of time
-- Hope you enjoy. If the code is too messy, I'd come back Friday :)
+- Did not focus on NextJS - first time ever using! Sure there are ways to do things the "NextJS" way. Fun to be able to use it.
+- Would use `styled-components` in future. Used a mix of utility classes, inline-styles, and css modules for speed
 
-# Getting started
+## Screenshots
 
-To get started, run the following commands:
+### Responsive UI
 
-```shell
-npm install
-npm run dev
+<img width="1888" alt="Screenshot 2024-03-12 at 11 25 58 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/1d241c78-ef78-4645-b93f-e85590764fa4">
+
+### Filtering
+
+<img width="1136" alt="Screenshot 2024-03-12 at 11 36 31 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/21e947e4-810e-4cd5-8f0d-3c795de32816">
+
+### Searching
+
+If filtering is on - will show outside search results
+
+<img width="1137" alt="Screenshot 2024-03-12 at 11 35 54 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/8ea03489-a420-4699-a89a-613977a32911">
+
 ```
 
 # Prompt
@@ -29,6 +42,14 @@ Hey! 👋 This is the codebase for the design engineer technical exercise. It's 
 ⛳ **Objective:** We would like you to implement a new page for the website highlighting our team, allowing visitors to view information about teammates, filter by department, search, and more.
 
 </aside>
+
+## Getting started
+
+To get started, run the following commands:
+
+```shell
+npm install
+npm run dev
 
 ## 🍎 Assignment
 
