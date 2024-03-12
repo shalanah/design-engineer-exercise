@@ -2,7 +2,7 @@
 
 ## Deployed Site
 
-[Deployed Site](https://design-engineer-code-assignment.netlify.app/)
+[Exercise Site](https://design-engineer-code-assignment.netlify.app/)
 
 ## Features
 
@@ -26,15 +26,21 @@
 
 <img width="681" alt="Screenshot 2024-03-12 at 11 43 13 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/394051bc-fc66-469c-87a9-145471239a76">
 
-### Filtering
+### Filtering Dropdown
 
-<img width="1136" alt="Screenshot 2024-03-12 at 11 36 31 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/21e947e4-810e-4cd5-8f0d-3c795de32816">
+<img width="681" alt="Screenshot 2024-03-12 at 11 45 39 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/03f344de-75cb-457b-9232-ef49ce446631">
+
+### Filtering Results
+
+<img width="681" alt="Screenshot 2024-03-12 at 11 45 32 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/426a85f1-46af-4638-9d59-daf772140217">
 
 ### Searching
 
-If filtering is on - will show outside search results
+<img width="681" alt="Screenshot 2024-03-12 at 11 45 26 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/b2fec590-3f33-43fc-8256-659825bbba74">
 
-<img width="1137" alt="Screenshot 2024-03-12 at 11 35 54 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/8ea03489-a420-4699-a89a-613977a32911">
+### Searching Outside Results
+
+<img width="681" alt="Screenshot 2024-03-12 at 11 45 56 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/3119c022-f492-438e-bf8c-44fec75c5fe9">
 
 
 # Prompt
