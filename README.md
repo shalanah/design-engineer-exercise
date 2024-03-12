@@ -32,7 +32,6 @@ If filtering is on - will show outside search results
 
 <img width="1137" alt="Screenshot 2024-03-12 at 11 35 54 AM" src="https://github.com/shalanah/design-engineer-exercise/assets/14183660/8ea03489-a420-4699-a89a-613977a32911">
 
-```
 
 # Prompt
 
