@@ -59,6 +59,7 @@ To get started, run the following commands:
 ```shell
 npm install
 npm run dev
+```
 
 ## 🍎 Assignment
 
